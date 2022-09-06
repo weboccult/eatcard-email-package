@@ -12,9 +12,6 @@
 ![Latest Version on Packagist](https://img.shields.io/packagist/v/weboccult/eatcard-companion?style=for-the-badge)
 
 ![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/weboccult/eatcard-companion/run-tests/master?style=for-the-badge)
-![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/weboccult/eatcard-companion/run-tests?label=tests&style=for-the-badge)
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/weboccult/eatcard-companion/Check%20&%20fix%20styling?label=Check%20%26%20fix%20styling&logo=github&style=for-the-badge)
-
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/weboccult/eatcard-companion?style=for-the-badge)
 ![GitHub Release Date](https://img.shields.io/github/release-date/weboccult/eatcard-companion?label=Latest%20Release&style=for-the-badge)
