@@ -1,8 +1,8 @@
 {
-    "name": "fenil/eatcard-mail-companion",
+    "name": "weboccult/eatcard-mail-companion",
     "description": "This package is create mail service for eatcard subsystem.",
     "keywords": [
-        "fenil",
+        "weboccult",
         "eatcard-mail-companion"
     ],
     "homepage": "https://github.com/weboccult/eatcard-mail-companion",
