@@ -2,7 +2,6 @@
 
 namespace Weboccult\EatcardMailCompanion\Models;
 
-use App\ImageFilters;
 use App\Models\StorePosImage;
 use App\Scopes\GoogleStoreScope;
 use App\StoreLanguage;
@@ -14,6 +13,7 @@ use App\Models\CardHistory;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
+use Weboccult\EatcardMailCompanion\Classes\ImageFilters;
 
 class Store extends Model
 {

@@ -55,17 +55,17 @@ class SendMailJob implements ShouldQueue
 			});
 			updateEmailCount('success');
 
-			$mailHisotry = new MailHistory();
-			$mailHisotry->entity_type = $mailDetails->entity_type;
-			$mailHisotry->entity_id = $mailDetails->entity_id;
-			$mailHisotry->subject = $mailDetails->subject;
-			$mailHisotry->bcc = $mailDetails->bcc;
-			$mailHisotry->cc = $mailDetails->cc;
-			$mailHisotry->from_name = $mailDetails->from_name;
-			$mailHisotry->mail_type = $mailDetails->mail_type;
-			$mailHisotry->recipients = $mailDetails->recipients;
-			$mailHisotry->message = $mailDetails->message;
-			$mailHisotry->save();
+			$mailHistory = new MailHistory();
+			$mailHistory->entity_type = $mailDetails->entity_type;
+			$mailHistory->entity_id = $mailDetails->entity_id;
+			$mailHistory->subject = $mailDetails->subject;
+			$mailHistory->bcc = $mailDetails->bcc;
+			$mailHistory->cc = $mailDetails->cc;
+			$mailHistory->from_name = $mailDetails->from_name;
+			$mailHistory->mail_type = $mailDetails->mail_type;
+			$mailHistory->recipients = $mailDetails->recipients;
+			$mailHistory->message = $mailDetails->message;
+			$mailHistory->save();
 		}
 		else {
 			updateEmailCount('error');
