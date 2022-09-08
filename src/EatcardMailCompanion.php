@@ -3,17 +3,11 @@
 namespace Weboccult\EatcardMailCompanion;
 
 use Illuminate\Support\Facades\Log;
-use Illuminate\Support\Facades\View;
-use Weboccult\EatcardCompanion\Enums\PrintMethod;
-use Weboccult\EatcardCompanion\Enums\PrintTypes;
-use function Weboccult\EatcardCompanion\Helpers\eatcardPrint;
-use Weboccult\EatcardCompanion\Services\Common\Prints\Generators\PaidOrderGenerator;
 use function Weboccult\EatcardMailCompanion\Helpers\getGiftCouponOrderDetail;
 use function Weboccult\EatcardMailCompanion\Helpers\getOrderDetail;
 use function Weboccult\EatcardMailCompanion\Helpers\getReservationDetail;
-use Weboccult\EatcardMailCompanion\jobs\SendMailJob;
+use Weboccult\EatcardMailCompanion\job\SendMailJob;
 use Weboccult\EatcardMailCompanion\Models\GiftCard;
-use Weboccult\EatcardMailCompanion\Models\MailJob;
 use Weboccult\EatcardMailCompanion\Models\Store;
 use function Weboccult\EatcardMailCompanion\Helpers\__mailCompanionViews;
 use Weboccult\EatcardMailCompanion\Models\User;
@@ -179,7 +173,7 @@ class EatcardMailCompanion
 			$mail_data['mail_type'] = $this->mail_type;
 			$mail_data['recipients'] = $this->recipients;
 			$mail_data['message'] = $this->content->render();
-			\Weboccult\EatcardMailCompanion\job\SendMailJob::dispatch(json_encode($mail_data));
+			SendMailJob::dispatch(json_encode($mail_data));
 		} catch (\Exception $e) {
 			Log::error('MailService : Error on MailJob create : '.$e->getMessage().' | Line : '.$e->getLine().' | File : ' .$e->getFile());
 		}
@@ -194,18 +188,8 @@ class EatcardMailCompanion
 		try {
 			$this->store = Store::query()->where('id', $this->entity_data->store_id)->first();
 			if(isset($this->payload['recipient_type']) && $this->payload['recipient_type'] != 'order.done') {
-				$orderData = eatcardPrint()
-					->generator(PaidOrderGenerator::class)
-					->method(PrintMethod::PROTOCOL)
-					->type(PrintTypes::MAIN)
-					->system($this->payload['system_type'])
-					->payload([
-						'order_id'          => $this->entity_id,
-						'takeawayEmailType' => $this->payload['recipient_type'],
-					])
-					->generate();
 				return __mailCompanionViews($this->entity_type.'.'.$this->payload['recipient_type'],[
-					'data' => $orderData,
+					'data' => $this->payload['order_data'],
 					'order' => $this->entity_data,
 					'store' => $this->store
 				]);

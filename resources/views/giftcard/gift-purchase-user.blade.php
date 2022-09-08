@@ -151,7 +151,7 @@
 												</table>
 											</td>
 											<td align="center" class="em_hide">
-												<img class="em_hide" src="{{ \Weboccult\EatcardCompanion\Helpers\getS3File(config ('eatcardMailCompanion.AWS_URL').'assets/line.png') }}"
+												<img class="em_hide" src="{{\Weboccult\EatcardMailCompanion\Helpers\getS3File(config ('eatcardMailCompanion.AWS_URL').'assets/line.png') }}"
                                                      style="display:block" width="2" height="230" border="0" alt="Image"/>
 											</td>
 											<td class="em_wrapper2" align="right" width="142" valign="top">

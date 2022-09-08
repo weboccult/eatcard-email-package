@@ -18,7 +18,6 @@
     "require": {
         "php": "^7.4|^8.0",
         "illuminate/support": "^8.0",
-        "weboccult/eatcard-companion": "dev-feature/kiosk-tickets-release-2022/9.0",
         "jenssegers/mongodb": "3.8"
     },
     "require-dev": {
