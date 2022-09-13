@@ -314,7 +314,7 @@
                                                                 @if(@$storeRes->limit_hour != 5)
                                                                     <div>{{@$storeRes->limit_hour}} </div>
                                                                 @else
-                                                                    <div>{!! __('messages.unlimited_time') !!}</div>
+                                                                    <div>Geen tijd limiet</div>
                                                                 @endif
                                                             </span>
                                                         </td>

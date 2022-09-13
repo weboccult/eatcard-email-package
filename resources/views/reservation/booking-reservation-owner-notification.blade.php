@@ -78,23 +78,8 @@ xmlns:o="urn:schemas-microsoft-com:office:office">
 <body class="em_body" style="margin:0px auto; padding:0px; background-color:#dddddd">
 <table width="100%" border="0" cellspacing="0" cellpadding="0" class="em_full_wrap">
 	<tr>
-		<td align="center" valign="top" style="padding:0 10px">
-			<table class="em_main_table" align="center" width="600" border="0" cellspacing="0" cellpadding="0"
-                   style="width:700px; table-layout:fixed; background-color:#FFFFFF">
-                <tr>
-                    <td align="center" style="padding:22px 0 0 0">
-                        <table class="em_wrapper" align="center" width="700" border="0" cellspacing="0" cellpadding="0"
-                               style="width:700px; background-color:#F5F5F5; border-radius:12px ">
-                            <tr>
-                                <td align="center"
-                                    style="font-family:'Roboto Slab', Arial, Tahoma; font-size:14px; line-height:19px; font-weight:normal; font-style:normal; color:#575757; padding:25px 10px 25px 10px">
-                                    Dit is een automatisch gegenereerde e-mail. Wij kunnen een antwoord op deze e-mail
-                                    niet beantwoorden.
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
+		<td align="center" valign="top">
+			<table class="em_main_table" align="center" width="600" border="0" cellspacing="0" cellpadding="0"  style="width:600px; table-layout:fixed; background-color:#FFFFFF">
 				<tr>
 					<td align="center">
 						<table class="em_wrapper" align="center" width="600" border="0" cellspacing="0" cellpadding="0" style="width:600px; background-color:#FFFFFF">
@@ -131,7 +116,8 @@ xmlns:o="urn:schemas-microsoft-com:office:office">
 										<tr>
 											<td align="center" style="padding:20px 0 0 0">
                                                 @if($store->page_logo)
-												    <img src="@mailCompanionGeneralHelper('getS3File',{{ $store->email_page_logo }})" style="display:block" border="0" alt="Eatcard"/>
+												    <img src="{{\Weboccult\EatcardMailCompanion\Helpers\getS3File($store->email_page_logo)}}"
+                                                         style="display:block" {{--width="auto" height="80"--}} border="0" alt="Eatcard"/>
 											    @endif
                                             </td>
 										</tr>
@@ -153,8 +139,9 @@ xmlns:o="urn:schemas-microsoft-com:office:office">
                                          @if(isset($storeRes->meal) && $storeRes->meal->meal_image)
                                         <tr>
                                             <td align="center" style="padding:0 0 0 0">
-                                                <img class="em_img" src="{{asset('imagecache/BookingMailMealImage/'.Weboccult\EatcardMailCompanion\Helpers\getCachedImagePath($storeRes->meal->meal_image))}}"
-                                                     style="display:block" width="520" height="174" border="0" alt="Image"/>
+                                                @if($storeRes->meal->meal_image)
+                                                <img class="em_img" src="{{asset('imagecache/BookingMailMealImage'.\Weboccult\EatcardMailCompanion\Helpers\getCachedImagePath($storeRes->meal->meal_image))}}" style="display:block" width="520" height="174" border="0" alt="Image"/>
+                                                @endif
                                             </td>
                                         </tr>
                                          @endif
@@ -304,7 +291,8 @@ xmlns:o="urn:schemas-microsoft-com:office:office">
                                                             <table class="em_wrapper" align="left" width="100%" border="0" cellspacing="0" cellpadding="0" style="width:100%">
                                                                 <tr>
                                                                     <td align="left" style="font-family:Arial, Tahoma; font-size:14px; line-height:17px; font-weight:normal; font-style:normal; color:#000000; padding:0 0 0 0">
-                                                                        <b>Totaal</b> aanbetaling ({{ $storeRes->person }}x€{{Weboccult\EatcardMailCompanion\Helpers\changePriceFormat(@$storeRes->meal->price)}})
+                                                                        <b>Totaal</b> aanbetaling ({{
+                                                                        $storeRes->person }}x€{{\Weboccult\EatcardMailCompanion\Helpers\changePriceFormat(@$storeRes->meal->price)}})
                                                                     </td>
                                                                 </tr>
                                                             </table>
@@ -313,7 +301,7 @@ xmlns:o="urn:schemas-microsoft-com:office:office">
                                                             <table class="em_wrapper" align="left" width="100%" border="0" cellspacing="0" cellpadding="0" style="width:100%">
                                                                 <tr>
                                                                     <td align="right" style="font-family:Arial, Tahoma; font-size:14px; line-height:17px; font-weight:bold; font-style:normal; color:#000000; padding:0 0 0 0">
-                                                                        €{{Weboccult\EatcardMailCompanion\Helpers\changePriceFormat($storeRes->total_price)}}
+                                                                        €{{\Weboccult\EatcardMailCompanion\Helpers\changePriceFormat($storeRes->total_price)}}
                                                                     </td>
                                                                 </tr>
                                                             </table>
@@ -333,8 +321,7 @@ xmlns:o="urn:schemas-microsoft-com:office:office">
                                     <table class="em_wrapper" align="center" width="478" border="0" cellspacing="0" cellpadding="0" style="width:478px; background-color:#F7F7F7; border-radius:12px">
                                         <tr>
                                             <td align="center" style="padding:20px 0 0 0">
-                                                <a href=""><img src="@mailCompanionGeneralHelper('getS3File',{{ config('eatcardMailCompanion.AWS_URL'). 'assets/btn2.png' }})" style="display:block;"
-                                                                width="98" height="24" border="0" alt="Opmerking"/></a>
+                                                <a href=""><img src="{{ env('COMPANION_AWS_URL').'/assets/btn2.png' }}" style="display:block;" width="98" height="24" border="0" alt="Opmerking"/></a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -356,7 +343,7 @@ xmlns:o="urn:schemas-microsoft-com:office:office">
                                                     <table class="em_wrapper" align="center" width="100%" border="0" cellspacing="0" cellpadding="0" style="width:100%; border-radius:12px;">
                                                         <tr>
                                                             <td align="left" style="font-family:Arial, Tahoma; font-size:12px; line-height:18px; font-weight:bold; font-style:normal; color:#000000; padding:9px 10px 0 10px">
-                                                                {!! __('messages.multiple_household') !!}
+                                                                @companionTrans('reservation.multiple_household')
                                                             </td>
                                                         </tr>
                                                         {{--<tr>--}}
@@ -403,17 +390,13 @@ xmlns:o="urn:schemas-microsoft-com:office:office">
                                                                 <tr>
                                                                     @if($store->facebook_url)
                                                                     <td align="center">
-                                                                        <a href="{{ $store->facebook_url }}"><img
-                                                                                    class="em_img"
-                                                                                    src="@mailCompanionGeneralHelper ('getS3File',{{ config ('eatcardMailCompanion.AWS_URL'). 'assets/facebook2.png' }})" style="display:block" width="24" height="24" border="0" alt="FB"/></a>
+                                                                        <a href="{{ $store->facebook_url }}"><img class="em_img" src="{{ env('COMPANION_AWS_URL').'/assets/facebook2.png' }}" style="display:block" width="24" height="24" border="0" alt="FB"/></a>
                                                                     </td>
                                                                     @endif
                                                                     <td width="5"></td>
                                                                     @if($store->instagram_url)
                                                                     <td align="center">
-                                                                        <a href="{{ $store->instagram_url }}"><img
-                                                                                    class="em_img"
-                                                                                    src="@mailCompanionGeneralHelper('getS3File',{{ config ('eatcardMailCompanion.AWS_URL'). 'assets/instagram.png' }})" style="display:block" width="24" height="24" border="0" alt="IG"/></a>
+                                                                        <a href="{{ $store->instagram_url }}"><img class="em_img" src="{{ env('COMPANION_AWS_URL').'/assets/instagram.png' }}" style="display:block" width="24" height="24" border="0" alt="IG"/></a>
                                                                     </td>
                                                                     @endif
                                                                 </tr>
@@ -444,8 +427,7 @@ xmlns:o="urn:schemas-microsoft-com:office:office">
                                         </tr>
                                         <tr>
                                             <td align="center" style="padding:10px 0 30px 0">
-                                                <img src="@mailCompanionGeneralHelper('getS3File',{{ config('eatcardMailCompanion.AWS_URL'). 'assets/eat_card.png' }})" style="display:block" width="56"
-                                                     height="25" border="0" alt="et card"/>
+                                                <img src="{{ env('COMPANION_AWS_URL').'/assets/eat_card.png' }}" style="display:block" width="56" height="25" border="0" alt="et card"/>
                                             </td>
                                         </tr>
                                     </table>

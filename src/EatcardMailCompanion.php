@@ -52,9 +52,23 @@ class EatcardMailCompanion
 		return $this;
 	}
 
+	/**
+	 * @param $payload
+	 * @return EatcardMailCompanion
+	 */
 	public function payload($payload) : self
 	{
 		$this->payload = $payload;
+		return $this;
+	}
+
+	/**
+	 * @param $content
+	 * @return EatcardMailCompanion
+	 */
+	public function content($content) : self
+	{
+		$this->content = $content;
 		return $this;
 	}
 
@@ -189,7 +203,7 @@ class EatcardMailCompanion
 			$this->store = Store::query()->where('id', $this->entity_data->store_id)->first();
 			if(isset($this->payload['recipient_type']) && $this->payload['recipient_type'] != 'order.done') {
 				return __mailCompanionViews($this->entity_type.'.'.$this->payload['recipient_type'],[
-					'data' => $this->payload['order_data'],
+					'data' => $this->content,
 					'order' => $this->entity_data,
 					'store' => $this->store
 				]);

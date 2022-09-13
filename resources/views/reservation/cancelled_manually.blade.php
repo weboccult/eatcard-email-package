@@ -147,7 +147,7 @@
                                         @if(isset($storeRes->meal) && $storeRes->meal->meal_image)
                                             <tr>
                                                 <td align="center" style="padding:0 0 0 0">
-                                                    <img class="em_img" src="{{env('ADMIN_URL').('/imagecache/BookingMailMealImage'.getCachedImagePath($storeRes->meal->meal_image))}}" style="display:block" width="520" height="174" border="0" alt="Image"/>
+                                                    <img class="em_img" src="{{env('ADMIN_URL').('/imagecache/BookingMailMealImage'.\Weboccult\EatcardMailCompanion\Helpers\getCachedImagePath($storeRes->meal->meal_image))}}" style="display:block" width="520" height="174" border="0" alt="Image"/>
                                                 </td>
                                             </tr>
                                         @endif
