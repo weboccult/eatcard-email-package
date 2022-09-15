@@ -89,6 +89,7 @@ class EatcardMailCompanion
 	public function entityId($entity_id): self
 	{
 		$this->entity_id = $entity_id;
+
 		if($this->entity_type == 'order') {
 			$this->entity_data = getOrderDetail($entity_id);
 			$this->content = $this->getOrderContent();
