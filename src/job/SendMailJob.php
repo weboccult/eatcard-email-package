@@ -55,7 +55,7 @@ class SendMailJob implements ShouldQueue
 				}
 			});
 			updateEmailCount('success');
-
+			Log::info('create mail entry in history table');
 			$mailHistory = new MailHistory();
 			$mailHistory->entity_type = $mailDetails->entity_type;
 			$mailHistory->entity_id = $mailDetails->entity_id;
