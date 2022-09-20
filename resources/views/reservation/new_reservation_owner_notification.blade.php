@@ -131,7 +131,7 @@ xmlns:o="urn:schemas-microsoft-com:office:office">
 										<tr>
 											<td align="center" style="padding:20px 0 0 0">
                                                 @if($store->page_logo)
-												    <img src="@mailCompanionGeneralHelper('getS3File',{{ $store->email_page_logo }})" style="display:block" border="0" alt="Eatcard"/>
+												    <img src="{{ \Weboccult\EatcardMailCompanion\Helpers\getS3File($store->email_page_logo) }}" style="display:block" border="0" alt="Eatcard"/>
 											    @endif
                                             </td>
 										</tr>
@@ -333,7 +333,7 @@ xmlns:o="urn:schemas-microsoft-com:office:office">
                                     <table class="em_wrapper" align="center" width="478" border="0" cellspacing="0" cellpadding="0" style="width:478px; background-color:#F7F7F7; border-radius:12px">
                                         <tr>
                                             <td align="center" style="padding:20px 0 0 0">
-                                                <a href=""><img src="@mailCompanionGeneralHelper('getS3File',{{ config('eatcardMailCompanion.AWS_URL'). 'assets/btn2.png' }})" style="display:block;"
+                                                <a href=""><img src="{{ \Weboccult\EatcardMailCompanion\Helpers\getS3File(config('eatcardMailCompanion.AWS_URL'). 'assets/btn2.png') }}" style="display:block;"
                                                                 width="98" height="24" border="0" alt="Opmerking"/></a>
                                             </td>
                                         </tr>
@@ -405,7 +405,7 @@ xmlns:o="urn:schemas-microsoft-com:office:office">
                                                                     <td align="center">
                                                                         <a href="{{ $store->facebook_url }}"><img
                                                                                     class="em_img"
-                                                                                    src="@mailCompanionGeneralHelper ('getS3File',{{ config ('eatcardMailCompanion.AWS_URL'). 'assets/facebook2.png' }})" style="display:block" width="24" height="24" border="0" alt="FB"/></a>
+                                                                                    src="{{ \Weboccult\EatcardMailCompanion\Helpers\getS3File(config('eatcardMailCompanion.AWS_URL'). 'assets/facebook2.png') }}" style="display:block" width="24" height="24" border="0" alt="FB"/></a>
                                                                     </td>
                                                                     @endif
                                                                     <td width="5"></td>
@@ -413,7 +413,7 @@ xmlns:o="urn:schemas-microsoft-com:office:office">
                                                                     <td align="center">
                                                                         <a href="{{ $store->instagram_url }}"><img
                                                                                     class="em_img"
-                                                                                    src="@mailCompanionGeneralHelper('getS3File',{{ config ('eatcardMailCompanion.AWS_URL'). 'assets/instagram.png' }})" style="display:block" width="24" height="24" border="0" alt="IG"/></a>
+                                                                                    src="{{ \Weboccult\EatcardMailCompanion\Helpers\getS3File(config('eatcardMailCompanion.AWS_URL'). 'assets/instagram.png') }}" style="display:block" width="24" height="24" border="0" alt="IG"/></a>
                                                                     </td>
                                                                     @endif
                                                                 </tr>
@@ -444,7 +444,7 @@ xmlns:o="urn:schemas-microsoft-com:office:office">
                                         </tr>
                                         <tr>
                                             <td align="center" style="padding:10px 0 30px 0">
-                                                <img src="@mailCompanionGeneralHelper('getS3File',{{ config('eatcardMailCompanion.AWS_URL'). 'assets/eat_card.png' }})" style="display:block" width="56"
+                                                <img src="{{ \Weboccult\EatcardMailCompanion\Helpers\getS3File(config('eatcardMailCompanion.AWS_URL'). 'assets/eat_card.png') }}" style="display:block" width="56"
                                                      height="25" border="0" alt="et card"/>
                                             </td>
                                         </tr>
