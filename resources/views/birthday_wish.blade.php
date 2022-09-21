@@ -696,7 +696,8 @@
                                         <tr>
                                             <td class="column_cell px pt_xs pb_0 logo_c tl" style="box-sizing: border-box;vertical-align: top;width: 100%;min-width: 100%;padding-top: 8px;padding-bottom: 0;font-family: Helvetica, Arial, sans-serif;font-size: 16px;line-height: 100%;color: #616161;mso-line-height-rule: exactly;text-align: left;padding-left: 16px;padding-right: 16px;"><a href="https://eatcard.nl" style="text-decoration: none;line-height: inherit;color: #f24853; display: block; margin-bottom:40px; ">
                                                     @if($user->page_logo)
-                                                        <img src="@mailCompanionGeneralHelper('getS3File',{{ $user->page_logo }})" width="65" height="92" alt="Eatcard - Versterk de binding met uw klanten" style="outline: none;border: 0;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;line-height: 100%;max-width: 168px;height: auto !important; display: block; margin:0 auto;">
+                                                        <img src="{{ \Weboccult\EatcardMailCompanion\Helpers\getS3File($user->page_logo) }}"
+                                                             width="65" height="92" alt="Eatcard - Versterk de binding met uw klanten" style="outline: none;border: 0;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;line-height: 100%;max-width: 168px;height: auto !important; display: block; margin:0 auto;">
                                                     @endif
                                                 </a></td>
                                         </tr>
@@ -741,8 +742,7 @@
                                                             Arial, sans-serif;font-size: 0;line-height: 100%;color:
                                                             #ffffff;mso-line-height-rule: exactly;display: block;
                                                             margin-top: 0;margin-bottom: 0;clear: both;"><img
-                                                                        src="@mailCompanionGeneralHelper('getS3File',
-{{ config('eatcardMailCompanion.AWS_URL').'assets/cake.png' }})" width="32" height="32" alt="" style="outline: none;
+                                                                        src="{{ \Weboccult\EatcardMailCompanion\Helpers\getS3File(config('eatcardMailCompanion.AWS_URL').'assets/cake.png') }}" width="32" height="32" alt="" style="outline: none;
 border: 0;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;line-height: 100%;max-width: 32px;width: 100% !important;height: auto !important;display: block;margin-left: auto;margin-right: auto;"></p>
                                                         </td>
                                                     </tr>

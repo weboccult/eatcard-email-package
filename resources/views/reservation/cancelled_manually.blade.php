@@ -125,7 +125,7 @@
                                 <tr>
                                     <td align="center" style="padding:20px 0 0 0">
                                         @if($store['page_logo'])
-                                            <img src="@mailCompanionGeneralHelper('getS3File',{{ $store['email_page_logo'] }})"
+                                            <img src="{{ \Weboccult\EatcardMailCompanion\Helpers\getS3File($store['email_page_logo']) }}"
                                                  style="display:block" {{--width="auto" height="80"--}} border="0" alt="Logo"/>
                                         @endif
                                     </td>
@@ -220,13 +220,15 @@
                                                                 <tr>
                                                                     @if($store['facebook_url'])
                                                                         <td align="center">
-                                                                            <a href="{{ $store['facebook_url'] }}"><img class="em_img" src="@mailCompanionGeneralHelper('getS3File',{{ config('eatcardMailCompanion.AWS_URL').'assets/facebook2.png' }})" style="display:block" width="24" height="24" border="0" alt="FB"/></a>
+                                                                            <a href="{{ $store['facebook_url']
+                                                                            }}"><img class="em_img" src="{{ \Weboccult\EatcardMailCompanion\Helpers\getS3File(config('eatcardMailCompanion.AWS_URL').'assets/facebook2.png') }}" style="display:block" width="24" height="24" border="0" alt="FB"/></a>
                                                                         </td>
                                                                     @endif
                                                                     <td width="5"></td>
                                                                     @if($store['instagram_url'])
                                                                         <td align="center">
-                                                                            <a href="{{ $store['instagram_url'] }}"><img class="em_img" src="@mailCompanionGeneralHelper('getS3File',{{ config('eatcardMailCompanion.AWS_URL').'assets/instagram.png' }})" style="display:block" width="24" height="24" border="0" alt="IG"/></a>
+                                                                            <a href="{{ $store['instagram_url']
+                                                                            }}"><img class="em_img" src="{{ \Weboccult\EatcardMailCompanion\Helpers\getS3File(config('eatcardMailCompanion.AWS_URL').'assets/instagram.png') }}" style="display:block" width="24" height="24" border="0" alt="IG"/></a>
                                                                         </td>
                                                                     @endif
                                                                 </tr>
@@ -257,7 +259,8 @@
                                         </tr>
                                         <tr>
                                             <td align="center" style="padding:10px 0 30px 0">
-                                                <img src="@mailCompanionGeneralHelper('getS3File',{{ config('eatcardMailCompanion.AWS_URL').'assets/eat_card.png' }})" style="display:block" width="56" height="25" border="0" alt="et card"/>
+                                                <img src="{{ \Weboccult\EatcardMailCompanion\Helpers\getS3File(config('eatcardMailCompanion.AWS_URL').'assets/eat_card.png') }}"
+                                                     style="display:block" width="56" height="25" border="0" alt="et card"/>
                                             </td>
                                         </tr>
                                     </table>
