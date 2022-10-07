@@ -32,7 +32,7 @@ if(!function_exists('getOrderDetail')) {
 	 * @param $order_id
 	 */
 	function getOrderDetail($order_id) {
-		$order = Order::query()->where('id', $order_id)->first();
+		$order = Order::query()->with('')->where('id', $order_id)->first();
 		if(empty($order)) {
 			$order = OrderHistory::query()->where('id', $order_id)->first();
 		}

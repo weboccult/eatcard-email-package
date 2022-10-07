@@ -156,7 +156,7 @@ class Order extends Model
     /**
      * @return BelongsTo
      */
-    public function kiosk(): BelongsTo
+    public function kiosk()
     {
         return $this->belongsTo(KioskDevice::class, 'kiosk_id', 'id');
     }
@@ -164,24 +164,8 @@ class Order extends Model
     /**
      * @return HasMany
      */
-    public function orderItems(): HasMany
+    public function orderItems()
     {
         return $this->hasMany(OrderItem::class, 'order_id');
-    }
-
-    /**
-     * @return HasMany
-     */
-    public function subOrders(): HasMany
-    {
-        return $this->hasMany(SubOrder::class, 'parent_order_id');
-    }
-
-    /**
-     * @return HasMany
-     */
-    public function voidOrder(): HasMany
-    {
-        return $this->hasMany(BackupRestore::class, 'order_id', 'id');
     }
 }

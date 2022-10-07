@@ -204,7 +204,7 @@ class EatcardMailCompanion
 			$this->store = Store::query()->where('id', $this->entity_data->store_id)->first();
 			if(isset($this->payload['recipient_type']) && $this->payload['recipient_type'] != 'order.done') {
 				return __mailCompanionViews($this->entity_type.'.'.$this->payload['recipient_type'],[
-					'data' => $this->content,
+					'data' => isset($this->payload['order_data']) ? $this->payload['order_data'] : $this->content,
 					'order' => $this->entity_data,
 					'store' => $this->store
 				]);
