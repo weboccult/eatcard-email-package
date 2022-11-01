@@ -100,8 +100,7 @@
                             <tr>
                                 <td align="center"
                                     style="font-family:'Roboto Slab', Arial, Tahoma; font-size:14px; line-height:19px; font-weight:normal; font-style:normal; color:#575757; padding:25px 10px 25px 10px">
-                                    Dit is een automatisch gegenereerde e-mail. Wij kunnen een antwoord op deze e-mail
-                                    niet beantwoorden.
+                                    Dit is een automatisch gegenereerde e-mail. Uw mail wordt niet beantwoord.
                                 </td>
                             </tr>
                         </table>
@@ -152,8 +151,8 @@
                                                                 </tr>
                                                                 <tr>
                                                                     <td align="left" style="font-family:Verdana, Arial, Tahoma; font-size:12px; line-height:15px; font-weight:normal; font-style:normal; color:#000000; padding:2px 0 0 0">
-                                                                        {{$data['title2']}}<br />
-                                                                        {{$data['title3']}}<br />
+                                                                        {{$order['full_name']}}<br />
+                                                                        {{$order['contact_no']}}<br />
                                                                         <a href="mailto:wing@pixel2code.nl" style="text-decoration:none; color:#000000">{{$data['title4']}}</a><br /><br />
 
                                                                         Besteldatum:<br />
@@ -173,8 +172,7 @@
                                                                 <tr>
                                                                     <td align="left" style="font-family:Verdana, Arial, Tahoma; font-size:12px; line-height:15px; font-weight:normal; font-style:normal; color:#000000; padding:2px 0 5px 0">
                                                                         {{$order['delivery_address']}}<br />
-                                                                        {{$order['delivery_postcode']}}<br />
-                                                                        {{$order['delivery_place']}}<br /><br />
+                                                                        {{$order['delivery_postcode']}}<br /><br />
 
                                                                         {{$data['titteTime'][0]['value2'] ?? ''}}<br />
                                                                         {{$data['title5']}}
@@ -531,7 +529,7 @@
                                                 <table class="em_wrapper" align="center" width="330" border="0" cellspacing="0" cellpadding="0" style="width:380px;">
                                                     <tr>
                                                         <td align="center" style="font-family:Verdana, Arial, Tahoma; font-size:12px; line-height:15px; font-weight:normal; font-style:normal; color:#000000; padding:20px 0 0 0">
-                                                            Uw order word verwerkt door Eatcard, onze partner voor Takeaway
+                                                            Uw order word verwerkt door Eatcard, onze partner voor horeca systemen.
                                                         </td>
                                                     </tr>
                                                     <tr>

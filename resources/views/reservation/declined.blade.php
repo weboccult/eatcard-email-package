@@ -130,7 +130,7 @@ xmlns:o="urn:schemas-microsoft-com:office:office">
 												<table class="em_wrapper" align="center" width="478" border="0" cellspacing="0" cellpadding="0" style="width:478px; background-color:#F7F7F7; border-radius:12px">
 													<tr>
 														<td align="center" style="font-family:Arial, Tahoma; font-size:16px; line-height:24px; font-weight:normal; font-style:normal; color:#000000; padding:18px 10px 18px 10px">
-															Dit is een automatisch gegenereerde e-mail. Het is niet mogelijk deze e-mail te beantwoorden.
+                                                            Dit is een automatisch gegenereerde e-mail. Uw mail wordt niet beantwoord.
 														</td>
 													</tr>
 												</table>
@@ -183,7 +183,7 @@ xmlns:o="urn:schemas-microsoft-com:office:office">
 												U kunt opnieuw een reservering plaatsen op onze site. Wij verwelkomen u graag op een andere datum in ons restaurant. <br /><br />
 
 												<b>Nog vragen?</b><br />
-												Indien u nog vragen heeft kunt u ons bereiken op het volgende telefoonnummer: {{$store->store_phone}}.
+                                                Indien u nog vragen heeft, kunt u ons bereiken op het telefoonnummer: {{$store->store_phone}}.
 											</td>
 										</tr>
 									</table>
@@ -280,7 +280,7 @@ xmlns:o="urn:schemas-microsoft-com:office:office">
                                         <tr>
                                             <td align="center" style="font-family:Arial, Tahoma; font-size:12px; line-height:18px; font-weight:normal; font-style:normal; color:#000000; padding:18px 0 0 0">
                                                 Uw reservering wordt verwerkt door Eatcard, onze<br class="em_hide"/>
-                                                partner voor online reserveren.
+                                                partner voor horeca systemen.
                                             </td>
                                         </tr>
                                         <tr>

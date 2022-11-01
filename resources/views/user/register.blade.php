@@ -736,7 +736,7 @@ table .nw {
                             <tr>
                               <td class="column_cell px pte tc pbe" style="box-sizing: border-box;vertical-align: top;width: 100%;min-width: 100%;padding-top: 32px;padding-bottom: 32px;font-family: Helvetica, Arial, sans-serif;font-size: 16px;line-height: 23px;color: #616161;mso-line-height-rule: exactly;text-align: center;padding-left: 16px;padding-right: 16px;">
                                 <h1 class="mb_xxs" align="center" style="color: #424242;margin-left: 0;margin-right: 0;margin-top: 20px;margin-bottom: 4px;padding: 0;font-weight: bold;font-size: 32px;line-height: 42px;">Beste {{$user->name}}</h1>
-                                <p class="lead" align="center" style="font-family: Helvetica, Arial, sans-serif;font-size: 19px;line-height: 27px;color: #b7b2c1;mso-line-height-rule: exactly;display: block;margin-top: 0;margin-bottom: 50px;">We hebben je account aangemaakt!</p>
+                                <p class="lead" align="center" style="font-family: Helvetica, Arial, sans-serif;font-size: 19px;line-height: 27px;color: #b7b2c1;mso-line-height-rule: exactly;display: block;margin-top: 0;margin-bottom: 50px;">We hebben uw account aangemaakt!</p>
                                 <table class="ebtn" align="center" border="0" cellspacing="0" cellpadding="0" style="box-sizing: border-box;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;display: table;margin-left: auto;margin-right: auto;">
                                   <tbody>
                                     <tr>
@@ -780,7 +780,7 @@ table .nw {
                           <tbody>
                             <tr>
                               <td class="column_cell px tc" style="box-sizing: border-box;vertical-align: top;width: 100%;min-width: 100%;padding-top: 16px;padding-bottom: 16px;font-family: Helvetica, Arial, sans-serif;font-size: 16px;line-height: 23px;color: #616161;mso-line-height-rule: exactly;text-align: center;padding-left: 16px;padding-right: 16px;">
-                                <p align="center" style="font-family: Helvetica, Arial, sans-serif;font-size: 16px;line-height: 23px;color: #616161;mso-line-height-rule: exactly;display: block;margin-top: 0;margin-bottom: 16px;">Hartelijk dank voor het registreren bij Eatcard. Uw registratie is voltooid en u bent hellemaal klaar om uw punten te gaan sparen en bij te houden.</p>
+                                <p align="center" style="font-family: Helvetica, Arial, sans-serif;font-size: 16px;line-height: 23px;color: #616161;mso-line-height-rule: exactly;display: block;margin-top: 0;margin-bottom: 16px;">Hartelijk dank voor uw registratie bij Eatcard. Uw registratie is voltooid. Vanaf nu kunt u beginnen met punten sparen en beheren.</p>
 
                               </td>
                             </tr>
@@ -852,9 +852,10 @@ table .nw {
 
                                 <p class="mb_xxs" style="font-family: Helvetica, Arial, sans-serif;font-size: 16px;line-height: 23px;color: #fff;mso-line-height-rule: exactly;display: block;margin-top: 0;margin-bottom: 4px;">
                                   ©{!! date("Y") !!} eatcard<br>
-                                  Europalaan 2, 5232 BC ‘s-Hertogenbosch
+                                    Helftheuvelweg 11, 5222 AV ’s-Hertogenbosch
                                 </p>
-                                <p class="small mb_0" align="center" style="font-family: Helvetica, Arial, sans-serif;font-size: 14px;line-height: 20px;color: #fff;mso-line-height-rule: exactly;display: block;margin-top: 0;margin-bottom: 0;"><a href="https://eatcard.nl" style="text-decoration: underline;line-height: inherit;color: #fff;"><span style="text-decoration: underline;line-height: inherit;color: #fff;">Download de app</span></a> <span style="line-height: inherit;">&nbsp; • &nbsp;</span> <a href="https://eatcard.nl/vragen-en-antwoorden" style="text-decoration: underline;line-height: inherit;color: #fff;"><span style="text-decoration: underline;line-height: inherit;color: #fff;">Vragen en Antwoorden</span></a> <span style="line-height: inherit;">&nbsp;{{-- • &nbsp;--}}</span></p>
+                                <p class="small mb_0" align="center" style="font-family: Helvetica, Arial,
+                                sans-serif;font-size: 14px;line-height: 20px;color: #fff;mso-line-height-rule: exactly;display: block;margin-top: 0;margin-bottom: 0;"><a href="https://eatcard.nl" style="text-decoration: underline;line-height: inherit;color: #fff;"><span style="text-decoration: underline;line-height: inherit;color: #fff;">Download de app</span></a> <span style="line-height: inherit;">&nbsp; • &nbsp;</span> <a href="https://eatcard.nl/vragen-en-antwoorden" style="text-decoration: underline;line-height: inherit;color: #fff;"><span style="text-decoration: underline;line-height: inherit;color: #fff;">Vragen en Antwoorden</span></a> <span style="line-height: inherit;">&nbsp; • &nbsp;</span></p>
                             </tr>
                           </tbody>
                         </table>

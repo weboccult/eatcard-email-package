@@ -541,7 +541,7 @@
                                         <tr>
                                             <td align="center" style="font-family:Arial, Tahoma; font-size:12px; line-height:18px; font-weight:normal; font-style:normal; color:#000000; padding:18px 0 0 0">
                                                 Uw reservering wordt verwerkt door Eatcard, onze<br class="em_hide"/>
-                                                partner voor online reserveren.
+                                                partner voor horeca systemen.
                                             </td>
                                         </tr>
                                         <tr>

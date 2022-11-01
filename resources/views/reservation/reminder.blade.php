@@ -130,7 +130,7 @@
                                                 <table class="em_wrapper" align="left" width="100%" border="0" cellspacing="0" cellpadding="0" style="width:100%">
                                                     <tr>
                                                         <td class="em_font16" align="left" style="font-family:Arial, Tahoma; font-size:16px; line-height:19px; font-weight:bold; font-style:normal; color:#000000; padding:22px 0 0 0">
-                                                            Reserverings Herinnering
+                                                            Reserveringsherinnering
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -170,7 +170,7 @@
                                     <table class="em_wrapper" align="center" width="478" border="0" cellspacing="0" cellpadding="0" style="width:478px; background-color:#F7F7F7; border-radius:12px">
                                         <tr>
                                             <td align="center" style="font-family:Arial, Tahoma; font-size:16px; line-height:24px; font-weight:normal; font-style:normal; color:#000000; padding:18px 10px 18px 10px">
-                                                Dit is een automatisch gegenereerde e-mail. Het is niet mogelijk deze e-mail te beantwoorden.
+                                                Dit is een automatisch gegenereerde e-mail. Uw mail wordt niet beantwoord.
                                             </td>
                                         </tr>
                                     </table>
@@ -272,7 +272,7 @@
                                         <tr>
                                             <td align="center" style="font-family:Arial, Tahoma; font-size:12px; line-height:18px; font-weight:normal; font-style:normal; color:#000000; padding:18px 0 0 0">
                                                 Uw reservering wordt verwerkt door Eatcard, onze<br class="em_hide" />
-                                                partner voor online reserveren.
+                                                partner voor horeca systemen.
                                             </td>
                                         </tr>
                                         <tr>

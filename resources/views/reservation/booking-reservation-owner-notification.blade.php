@@ -80,7 +80,20 @@ xmlns:o="urn:schemas-microsoft-com:office:office">
 	<tr>
 		<td align="center" valign="top">
 			<table class="em_main_table" align="center" width="600" border="0" cellspacing="0" cellpadding="0"  style="width:600px; table-layout:fixed; background-color:#FFFFFF">
-				<tr>
+                <tr>
+                    <td align="center" style="padding:22px 0 0 0">
+                        <table class="em_wrapper" align="center" width="700" border="0" cellspacing="0" cellpadding="0"
+                               style="width:700px; background-color:#F5F5F5; border-radius:12px ">
+                            <tr>
+                                <td align="center"
+                                    style="font-family:'Roboto Slab', Arial, Tahoma; font-size:14px; line-height:19px; font-weight:normal; font-style:normal; color:#575757; padding:25px 10px 25px 10px">
+                                    Dit is een automatisch gegenereerde e-mail. Uw mail wordt niet beantwoord.
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
 					<td align="center">
 						<table class="em_wrapper" align="center" width="600" border="0" cellspacing="0" cellpadding="0" style="width:600px; background-color:#FFFFFF">
 							<tr>
@@ -173,7 +186,7 @@ xmlns:o="urn:schemas-microsoft-com:office:office">
                                                 <table class="em_wrapper" align="left" width="100%" border="0" cellspacing="0" cellpadding="0" style="width:100%">
                                                     <tr>
                                                         <td align="left" style="font-family:Arial, Tahoma; font-size:14px; line-height:24px; font-weight:normal; font-style:normal; color:#000000; padding:0 0 0 0">
-                                                            Contact number<br />
+                                                            Telefoonnummer<br />
                                                             <span style="font-size:18px; font-weight:bold">{{ $storeRes->gsm_no }}</span>
                                                         </td>
                                                     </tr>
@@ -422,7 +435,7 @@ xmlns:o="urn:schemas-microsoft-com:office:office">
                                         <tr>
                                             <td align="center" style="font-family:Arial, Tahoma; font-size:12px; line-height:18px; font-weight:normal; font-style:normal; color:#000000; padding:18px 0 0 0">
                                                 Uw reservering wordt verwerkt door Eatcard, onze<br class="em_hide"/>
-                                                partner voor online reserveren.
+                                                partner voor horeca systemen.
                                             </td>
                                         </tr>
                                         <tr>

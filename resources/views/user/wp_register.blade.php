@@ -855,7 +855,7 @@
 
                                                 <p class="mb_xxs" style="font-family: Helvetica, Arial, sans-serif;font-size: 16px;line-height: 23px;color: #fff;mso-line-height-rule: exactly;display: block;margin-top: 0;margin-bottom: 4px;">
                                                     ©{!! date("Y") !!} eatcard<br>
-                                                    Europalaan 2, 5232 BC ‘s-Hertogenbosch
+                                                    Helftheuvelweg 11, 5222 AV ’s-Hertogenbosch<br />
                                                 </p>
                                                 <p class="small mb_0" align="center" style="font-family: Helvetica, Arial, sans-serif;font-size: 14px;line-height: 20px;color: #fff;mso-line-height-rule: exactly;display: block;margin-top: 0;margin-bottom: 0;"><a href="https://eatcard.nl" style="text-decoration: underline;line-height: inherit;color: #fff;"><span style="text-decoration: underline;line-height: inherit;color: #fff;">Download de app</span></a> <span style="line-height: inherit;">&nbsp; • &nbsp;</span> <a href="https://eatcard.nl/vragen-en-antwoorden" style="text-decoration: underline;line-height: inherit;color: #fff;"><span style="text-decoration: underline;line-height: inherit;color: #fff;">Vragen en Antwoorden</span></a> <span style="line-height: inherit;">&nbsp; • &nbsp;</span> <a href="#" style="text-decoration: underline;line-height: inherit;color: #fff;"></p>
                                         </tr>

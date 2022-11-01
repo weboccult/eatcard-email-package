@@ -88,8 +88,7 @@ xmlns:o="urn:schemas-microsoft-com:office:office">
                             <tr>
                                 <td align="center"
                                     style="font-family:'Roboto Slab', Arial, Tahoma; font-size:14px; line-height:19px; font-weight:normal; font-style:normal; color:#575757; padding:25px 10px 25px 10px">
-                                    Dit is een automatisch gegenereerde e-mail. Wij kunnen een antwoord op deze e-mail
-                                    niet beantwoorden.
+                                    Dit is een automatisch gegenereerde e-mail. Uw mail wordt niet beantwoord.
                                 </td>
                             </tr>
                         </table>
@@ -186,7 +185,7 @@ xmlns:o="urn:schemas-microsoft-com:office:office">
                                                 <table class="em_wrapper" align="left" width="100%" border="0" cellspacing="0" cellpadding="0" style="width:100%">
                                                     <tr>
                                                         <td align="left" style="font-family:Arial, Tahoma; font-size:14px; line-height:24px; font-weight:normal; font-style:normal; color:#000000; padding:0 0 0 0">
-                                                            Contact number<br />
+                                                            Telefoonnummer<br />
                                                             <span style="font-size:18px; font-weight:bold">{{ $storeRes->gsm_no }}</span>
                                                         </td>
                                                     </tr>
@@ -439,7 +438,7 @@ xmlns:o="urn:schemas-microsoft-com:office:office">
                                         <tr>
                                             <td align="center" style="font-family:Arial, Tahoma; font-size:12px; line-height:18px; font-weight:normal; font-style:normal; color:#000000; padding:18px 0 0 0">
                                                 Uw reservering wordt verwerkt door Eatcard, onze<br class="em_hide"/>
-                                                partner voor online reserveren.
+                                                partner voor horeca systemen.
                                             </td>
                                         </tr>
                                         <tr>

@@ -90,8 +90,7 @@
                             <tr>
                                 <td align="center"
                                     style="font-family:'Roboto Slab', Arial, Tahoma; font-size:14px; line-height:19px; font-weight:normal; font-style:normal; color:#575757; padding:25px 10px 25px 10px">
-                                    Dit is een automatisch gegenereerde e-mail. Wij kunnen een antwoord op deze e-mail
-                                    niet beantwoorden.
+                                    Dit is een automatisch gegenereerde e-mail. Uw mail wordt niet beantwoord.
                                 </td>
                             </tr>
                         </table>
@@ -207,7 +206,7 @@
 										@if($order->is_friend_send == 1)
 										<tr>
 											<td class="em_font14" align="center" style="font-family:Georgia, Arial, sans-serif; font-size:18px; line-height:22px; font-weight:normal; font-style:normal; color:#000000; padding:26px 0 0 0; ">
-                                                Beste {{ $order->full_name }}, We hebben je order ontvangen. Een E-Giftcard is verstuurd naar {{$order->friend_full_name}}.
+                                                Beste {{ $order->full_name }}, We hebben uw order ontvangen. Een E-Giftcard is verstuurd naar {{$order->friend_full_name}}.
 											</td>
 										</tr>
 										@endif
@@ -297,7 +296,7 @@
 
 																<tr>
 																	<td align="left" style="font-family:'Work Sans', Arial, sans-serif; font-size:12px; line-height:18px; font-weight:normal; font-style:normal; color:#000000; padding:6px 0 12px 0; ">
-																		Cadeaubonnen zijn niet inwisselbaar voor geld. Indien het totaalbedrag van de bestelling hoger is dan de waarde van de gebruikte Cadeaubon(nen), dient het verschil betaald te worden met één van de overige betaalmethoden: iDEAL, PapPal of bankoverschrijving.<br /><br />
+                                                                        Cadeaubonnen zijn niet inwisselbaar voor geld. Indien het totaalbedrag van de bestelling hoger is dan de waarde van de gebruikte Cadeaubon(nen), dient het verschil betaald te worden met overige betaalmethoden<br /><br />
 
 																		Deze cadeaukaart is geldig tot {{ Carbon\Carbon::parse($order->expire_at)->addDay()->diffInYears(Carbon\Carbon::now()) }} jaar na aankoop.
 																	</td>
@@ -377,8 +376,8 @@
 									<table class="em_wrapper" align="center" width="500" border="0" cellspacing="0" cellpadding="0" style="width:500px;">
 										<tr>
 											<td align="center" style="font-family:'Work Sans', Arial, sans-serif; font-size:12px; line-height:18px; font-weight:normal; font-style:normal; color:#000000; padding:20px 0 0 0; ">
-												Uw reservering wordt verwerkt door Eatcard, onze<br />
-												partner voor online reserveren.
+                                                Uw reservering wordt verwerkt door Eatcard, onze<br />
+                                                partner voor horeca systemen.
 											</td>
 										</tr>
 

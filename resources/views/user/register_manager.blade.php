@@ -86,8 +86,7 @@
                             <tr>
                                 <td align="center"
                                     style="font-family:'Roboto Slab', Arial, Tahoma; font-size:14px; line-height:19px; font-weight:normal; font-style:normal; color:#575757; padding:25px 10px 25px 10px">
-                                    Dit is een automatisch gegenereerde e-mail. Wij kunnen een antwoord op deze e-mail
-                                    niet beantwoorden.
+                                    Dit is een automatisch gegenereerde e-mail. Uw mail wordt niet beantwoord.
                                 </td>
                             </tr>
                         </table>
@@ -122,7 +121,7 @@
                                                     </tr>
                                                     <tr>
                                                         <td align="left" style="font-family:'Roboto Slab', Georgia; font-size:14px; line-height:19px; font-weight:normal; font-style:normal; color:#575757; padding:28px 0 35px 0;">
-                                                            We hebben uw restaurant gekoppeld aan uw account. Hieronder vindt u uw account gegevens.
+                                                            Hartelijk bedankt voor uw vertrouwen in Eatcard. Wij hebben uw restaurant gekoppeld aan uw account. Hieronder vindt u uw accountgegevens.
                                                         </td>
                                                     </tr>
 
@@ -225,7 +224,8 @@
                                                     <tr>
                                                         <td align="left" valign="top"  style="font-family:'Roboto Slab', Georgia; font-size:14px; line-height:19px; font-weight:normal; font-style:normal; color:#575757; padding:36px 0 42px 0">
                                                             <b>Nog vragen?</b><br />
-                                                            Indien u nog vragen heeft kunt u ons bereiken op het volgende<br class="em_hide"/>
+                                                            Indien u nog vragen heeft, kunt u ons bereiken op het<br
+                                                                    class="em_hide"/>
                                                             telefoonnummer: <a href="tel:073 7 11 09 76" style="color:#575757; text-decoration:none">073 7 11 09 76</a> of mail naar <a href="mailto:support@eatcard.nl" style="color:#575757; text-decoration:none">support@eatcard.nl</a><br /><br />
 
                                                             Met vriendelijke groeten,<br />
@@ -248,7 +248,7 @@
                             <tr>
                                 <td align="center" valign="top"  style="font-family:'Roboto Slab', Georgia; font-size:14px; line-height:24px; font-weight:normal; font-style:normal; color:#575757; padding:21px 15px 60px 15px">
                                     &copy;{{ date('Y') }} Eatcard<br />
-                                    Europalaan 2, 5232 BC 's-Hertogenbosch<br />
+                                    Helftheuvelweg 11, 5222 AV ’s-Hertogenbosch<br />
                                     <a href="http://www.eatcard.nl/" style="color:#575757; text-decoration:none">www.eatcard.nl</a> | <a href="mailto:support@eatcard.nl" style="color:#575757; text-decoration:none">support@eatcard.nl</a>
                                 </td>
                             </tr>

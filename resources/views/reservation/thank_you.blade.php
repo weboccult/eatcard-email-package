@@ -135,8 +135,7 @@
                             <tr>
                                 <td align="center"
                                     style="font-family:'Roboto Slab', Arial, Tahoma; font-size:14px; line-height:19px; font-weight:normal; font-style:normal; color:#575757; padding:25px 10px 25px 10px">
-                                    Dit is een automatisch gegenereerde e-mail. Wij kunnen een antwoord op deze e-mail
-                                    niet beantwoorden.
+                                    Dit is een automatisch gegenereerde e-mail. Uw mail wordt niet beantwoord.
                                 </td>
                             </tr>
                         </table>
@@ -246,9 +245,7 @@
                                                                 style="font-family:'Roboto Slab', Arial, Tahoma; font-size:18px; line-height:32px; font-weight:normal; font-style:normal; color:#575757; padding:28px 0 0 0;">
                                                                 <strong style="font-family:'Roboto Slab', Arial, Tahoma;">VIP
                                                                     worden? </strong><br/>
-                                                                Nog geen VIP bij {{ $store->store_name }}? Kom
-                                                                dan bij ons langs om lid te worden, en ontvang in de
-                                                                toekomst verschillende leuke acties & kortingen. <br/>
+                                                                Bent u nog VIP bij {{ $store->store_name }}? Meld u aan! En ontvang verschillende leuke acties & kortingen. <br/>
                                                                 <br/>
 
                                                                 We verwelkomen u graag weer in ons restaurant.

@@ -138,8 +138,7 @@
                             <tr>
                                 <td align="center"
                                     style="font-family:'Roboto Slab', Arial, Tahoma; font-size:14px; line-height:19px; font-weight:normal; font-style:normal; color:#575757; padding:25px 10px 25px 10px">
-                                    Dit is een automatisch gegenereerde e-mail. Wij kunnen een antwoord op deze e-mail
-                                    niet beantwoorden.
+                                    Dit is een automatisch gegenereerde e-mail. Uw mail wordt niet beantwoord.
                                 </td>
                             </tr>
                         </table>
@@ -243,7 +242,7 @@
                             <tr>
                                 <td align="center" style="padding:20px 0 35px 0">
                                     <a href="https://eatcard.nl"
-                                       title="Eatcard - De online reserveringssysteem en loyaliteiten programma voor elke type restaurant"
+                                       title="Eatcard - Ontgrendel een krachtig systeem van services die samenwerken voor de horeca"
                                        target="_blank"><img src="{{ Weboccult\EatcardMailCompanion\Helpers\getS3File(config('eatcardMailCompanion.AWS_URL'). 'assets/eatcard-email.png') }}"
                                                             style="display:block" width="146" height="24" border="0"
                                                             alt="Image"/></a>
