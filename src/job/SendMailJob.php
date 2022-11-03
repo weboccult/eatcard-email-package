@@ -11,6 +11,7 @@ use Illuminate\Queue\SerializesModels;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 use function Weboccult\EatcardMailCompanion\Helpers\updateEmailCount;
+use Weboccult\EatcardMailCompanion\Models\BillingInvoice;
 use Weboccult\EatcardMailCompanion\Models\MailHistory;
 
 class SendMailJob implements ShouldQueue
@@ -52,6 +53,12 @@ class SendMailJob implements ShouldQueue
 				if ($mailDetails->cc) {
 					$cc = explode(',', $mailDetails->cc);
 					$message->cc($cc);
+				}
+				if($mailDetails->entity_type == 'billing_invoice') {
+					$billingInvoice = BillingInvoice::query()->where('id', $mailDetails->entity_id)->first();
+					$message->attach($billingInvoice->invoice_url, [
+						'as' => $billingInvoice->invoice_number.'.pdf'
+					]);
 				}
 			});
 			updateEmailCount('success');
