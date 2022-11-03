@@ -2,6 +2,7 @@
 
 namespace Weboccult\EatcardMailCompanion;
 
+use Cmgmyr\Messenger\Models\Message;
 use Illuminate\Support\Facades\Log;
 use function Weboccult\EatcardMailCompanion\Helpers\getGiftCouponOrderDetail;
 use function Weboccult\EatcardMailCompanion\Helpers\getOrderDetail;
@@ -224,11 +225,15 @@ class EatcardMailCompanion
 	public function getReservationContent() {
 		Log::info('Reservation status : '.$this->payload['status']);
 		$this->store = Store::query()->where('id', $this->entity_data->store_id)->first();
+		$messages = Message::where('thread_id', $this->entity_data->thread_id)
+			->where('user_id', '!=', null)
+			->orderBy('id', 'desc')->first();
 		$this->content = __mailCompanionViews('reservation.'.$this->payload['status'],[
 			'store' => $this->store,
 			'storeRes' => $this->entity_data,
 			'chat_link_url' => encrypt($this->entity_data->store_id . '-' . $this->entity_data->id . '-' . $this->entity_data->user_id).(!is_null($this->entity_data->user_id) ? '/' .$this->entity_data->user_id : ''),
 			'data' => $this->payload['other_data'] ?? [],
+			'messages' => $messages,
 		]);
 //		$this->reservationMail('reservation.'.$this->entity_data->status);
 	}
