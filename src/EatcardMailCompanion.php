@@ -107,6 +107,12 @@ class EatcardMailCompanion
 			$this->content = __mailCompanionViews('birthday_wish', [
 				'user' => $user
 			]);
+		} elseif ($this->entityType == 'billing_invoice') {
+			$user = User::query()->where('email', $this->recipients)->first();
+			$this->content = __mailCompanionViews('billing_invoice', [
+				'store_owner' => $user,
+				'month' => $this->payload['month'],
+			]);
 		}
 		return $this;
 	}
