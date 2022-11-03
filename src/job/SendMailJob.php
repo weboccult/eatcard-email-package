@@ -37,6 +37,7 @@ class SendMailJob implements ShouldQueue
 	 */
 	public function handle()
 	{
+		Log::info('Send mail job uuid : '.$this->job->payload()['uuid']);
 		$mailDetails = json_decode($this->details);
 		Log::info('Send mail entity id : '. $mailDetails->entity_id.' | entity type : '. $mailDetails->entity_type);
 		Log::info('Send mail type : '.$mailDetails->mail_type);
