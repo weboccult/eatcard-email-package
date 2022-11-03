@@ -8,6 +8,7 @@ use function Weboccult\EatcardMailCompanion\Helpers\getGiftCouponOrderDetail;
 use function Weboccult\EatcardMailCompanion\Helpers\getOrderDetail;
 use function Weboccult\EatcardMailCompanion\Helpers\getReservationDetail;
 use Weboccult\EatcardMailCompanion\job\SendMailJob;
+use Weboccult\EatcardMailCompanion\Models\Card;
 use Weboccult\EatcardMailCompanion\Models\GiftCard;
 use Weboccult\EatcardMailCompanion\Models\Store;
 use function Weboccult\EatcardMailCompanion\Helpers\__mailCompanionViews;
@@ -112,6 +113,18 @@ class EatcardMailCompanion
 			$this->content = __mailCompanionViews('billing_invoice', [
 				'store_owner' => $user,
 				'month' => $this->payload['month'],
+			]);
+		} elseif ($this->entityType == 'cards') {
+			$card = Card::with([
+				'store' => function ($s2) {
+					$s2->where('is_inactive_mail', 1);
+				},
+				'customer'
+			])->findOrFail($this->entityId);
+			$this->content = __mailCompanionViews('user.inactive_user_reminder', [
+				'user' => $card->customer,
+				'msg' => $this->payload['msg'],
+				'store' => $card->store,
 			]);
 		}
 		return $this;

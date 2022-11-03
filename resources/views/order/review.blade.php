@@ -271,7 +271,7 @@
                                     @if($store->instagram_url)
                                         <a  style="display: inline-block; padding-right: 10px" href="{{ $store->instagram_url }}"
                                             title="Instagram"
-                                            target="_blank"><img src="{{ getS3File(env('AWS_URL').'assets/instagram.jpeg') }}"
+                                            target="_blank"><img src="{{ $store->instagram_url }}"><img class="em_img" src="{{ \Weboccult\EatcardMailCompanion\Helpers\getS3File(config('eatcardMailCompanion.AWS_URL').'assets/instagram.png') }}"
                                                                  style="display:block" width="24" height="24" border="0"
                                                                  alt="Image"/></a>
                                     @endif
