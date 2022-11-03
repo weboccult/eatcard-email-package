@@ -219,6 +219,7 @@ class EatcardMailCompanion
 				return __mailCompanionViews($this->payload['recipient_type'],[
 					'store' => $this->store,
 					'order' => $this->entity_data,
+					'review_link_url' => $this->payload['review_link_url'] ?? ''
 				]);
 			}
 
