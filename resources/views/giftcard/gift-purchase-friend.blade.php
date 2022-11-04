@@ -129,8 +129,7 @@
 												<table class="em_wrapper" align="left" width="100%" border="0" cellspacing="0" cellpadding="0" style="width:100%;">
 													<tr>
 														<td align="center" height="230" valign="top" style="background-size:cover; background-position:center center; {{ $gift_card && $gift_card->color ? 'background-color:'. $gift_card->color : ''}}"
-															background="{{ $gift_card && $gift_card->image ? Weboccult\EatcardMailCompanion\Helpers\getS3File ($gift_card->image) : Weboccult\EatcardMailCompanion\Helpers\getS3File(null)
-															}}" >
+															background="{{ $gift_card && $gift_card->image ? Weboccult\EatcardMailCompanion\Helpers\getS3File ($gift_card->image) : \Weboccult\EatcardMailCompanion\Helpers\getS3File(config('eatcardMailCompanion.AWS_URL').'assets/no_image.png') }}" >
 															<table class="em_wrapper" align="left" width="100%" border="0" cellspacing="0" cellpadding="0" style="width:100%;">
 																<tr>
 																	<td align="left" style="padding:14px 10px 10px 14px;" >
@@ -166,34 +165,34 @@
 																<tr>
 																	<td align="center" style="padding:33px 0 0 0">
 																		@if($qr_image)
-																			<img src="{{ \Weboccult\EatcardMailCompanion\Helpers\getS3File($qr_image) }}" style="display:block" width="106" height="106" border="0" alt="Image"/>
+																			<img src="{{ $qr_image }}" style="display:block" width="106" height="106" border="0" alt="Image"/>
 																		@endif
 																	</td>
 																</tr>
 
-																<tr>
-																	<td align="center" style="padding:10px 10px 10px 10px">
-																		<table align="center" width="106" border="0" cellspacing="0" cellpadding="0" style="width:106px; background-color:#FFFFFF; border-radius:8px">
-																			<tr>
-																				<td align="center" style="font-family:'Work Sans', Arial, sans-serif; font-size:14px; line-height:18px; font-weight:normal; font-style:normal; color:#000000; padding:5px 5px 5px 5px; ">
-																					<a href="" style="text-decoration:none; color:#000000">{{ $order->qr_code }}</a>
-																				</td>
-																			</tr>
-																		</table>
-																	</td>
-																</tr>
-															</table>
-														</td>
-													</tr>
-												</table>
-											</td>
-										</tr>
-									</table>
-								</td>
-							</tr>
-						</table>
-					</td>
-				</tr>
+                                                                <tr>
+                                                                    <td align="center" style="font-family: Avenir, Helvetica, sans-serif; box-sizing: border-box; border-collapse: collapse; mso-line-height-rule: exactly; padding: 10px 10px 10px 10px;">
+                                                                        <table align="center" width="106" border="0" cellspacing="0" cellpadding="0" style="font-family: Avenir, Helvetica, sans-serif; box-sizing: border-box; border-collapse: collapse; mso-table-lspace: 0px; mso-table-rspace: 0px; width: 106px; background-color: #FFFFFF; border-radius: 8px;">
+                                                                            <tr>
+                                                                                <td align="center" style="box-sizing: border-box; border-collapse: collapse; mso-line-height-rule: exactly; font-family: 'Work Sans', Arial, sans-serif; font-size: 14px; line-height: 18px; font-weight: normal; font-style: normal; color: #000000; padding: 5px 5px 5px 5px;">
+                                                                                    <a href="" style="font-family: Avenir, Helvetica, sans-serif; box-sizing: border-box; border-collapse: collapse; mso-line-height-rule: exactly; text-decoration: none; color: #000000;">BFC9719351</a>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
 
 				<tr>
 					<td align="center">

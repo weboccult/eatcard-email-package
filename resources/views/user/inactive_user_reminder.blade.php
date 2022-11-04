@@ -676,7 +676,7 @@ table .nw {
 
 </head>
 <body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" style="min-width: 100%;margin: 0;padding: 0;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;background-color: #24ABFF;width: 100% !important;">
-  <!-- header_accent_icons -->
+  <!-- header -->
   <table class="email_table" width="100%" border="0" cellspacing="0" cellpadding="0" style="box-sizing: border-box;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;min-width: 100%;">
     <tbody>
       <tr>
@@ -687,64 +687,18 @@ table .nw {
               <tbody>
                 <tr>
                   <td class="blank_cell header_c pt pb" style="box-sizing: border-box;vertical-align: top;padding-top: 16px;padding-bottom: 16px;line-height: inherit;">
-                    <!-- col-2-4 -->
-                    <div class="email_row" style="box-sizing: border-box;font-size: 0;display: block;width: 100%;vertical-align: top;margin: 0 auto;text-align: center;clear: both;line-height: inherit;min-width: 0 !important;max-width: 600px !important;">
-                    <!--[if (mso)|(IE)]><table width="600" border="0" cellspacing="0" cellpadding="0" align="center" style="vertical-align:top;width:600px;Margin:0 auto;"><tbody><tr><td width="200" style="width:200px;line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
-                      <div class="col_2" style="box-sizing: border-box;font-size: 0;display: inline-block;width: 100%;vertical-align: top;max-width: 200px;line-height: inherit;min-width: 0 !important;">
-                        <table class="column" width="100%" border="0" cellspacing="0" cellpadding="0" style="box-sizing: border-box;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;min-width: 100%;">
-                          <tbody>
-                            <tr>
-                                <td class="column_cell px pt_xs pb_0 logo_c tl" style="box-sizing: border-box;vertical-align: top;width: 100%;min-width: 100%;padding-top: 8px;padding-bottom: 0;font-family: Helvetica, Arial, sans-serif;font-size: 16px;line-height: 100%;color: #616161;mso-line-height-rule: exactly;text-align: left;padding-left: 16px;padding-right: 16px;"><a href="https://eatcard.nl" style="text-decoration: none;line-height: inherit;color: #f24853; display: block; margin-bottom:40px; ">
-                                    @if($store->page_logo)
-                                    <img src="{{ \Weboccult\EatcardMailCompanion\Helpers\getS3File($store->email_page_logo) }}" alt="Eatcard - Versterk de binding met uw klanten" style="outline: none;border: 0;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;line-height: 100%;max-width: 168px;height: auto !important; display: block; margin:0 auto;">
-                                    @endif
-                                  </a>
-                                </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <!--[if (mso)|(IE)]></td></tr></tbody></table><![endif]-->
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <!-- jumbotron_button -->
-  <table class="email_table" width="100%" border="0" cellspacing="0" cellpadding="0" style="box-sizing: border-box;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;min-width: 100%;">
-    <tbody>
-      <tr>
-        <td class="email_body tc" style="box-sizing: border-box;vertical-align: top;line-height: 100%;text-align: center;padding-left: 16px;padding-right: 16px;background-color: #24ABFF;font-size: 0 !important;">
-          <!--[if (mso)|(IE)]><table width="632" border="0" cellspacing="0" cellpadding="0" align="center" style="vertical-align:top;width:632px;Margin:0 auto;"><tbody><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
-          <div class="email_container" style="box-sizing: border-box;font-size: 0;display: inline-block;width: 100%;vertical-align: top;max-width: 632px;margin: 0 auto;text-align: center;line-height: inherit;min-width: 0 !important;">
-            <table class="content_section" width="100%" border="0" cellspacing="0" cellpadding="0" style="box-sizing: border-box;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;min-width: 100%;">
-              <tbody>
-                <tr>
-                  <td class="content_cell brt" style="box-sizing: border-box;vertical-align: top;width: 100%;background-color: #ffffff;font-size: 0;text-align: center;padding-left: 16px;padding-right: 16px;border-radius: 4px 4px 0 0;line-height: inherit;min-width: 0 !important;">
                     <!-- col-6 -->
                     <div class="email_row" style="box-sizing: border-box;font-size: 0;display: block;width: 100%;vertical-align: top;margin: 0 auto;text-align: center;clear: both;line-height: inherit;min-width: 0 !important;max-width: 600px !important;">
-                    <!--[if (mso)|(IE)]><table width="600" border="0" cellspacing="0" cellpadding="0" align="center" style="vertical-align:top;width:600px;Margin:0 auto 0 0;"><tbody><tr><td width="600" style="width:600px;line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+                    <!--[if (mso)|(IE)]><table width="600" border="0" cellspacing="0" cellpadding="0" align="center" style="vertical-align:top;width:600px;Margin:0 auto;"><tbody><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
                       <div class="col_6" style="box-sizing: border-box;font-size: 0;display: inline-block;width: 100%;vertical-align: top;max-width: 600px;line-height: inherit;min-width: 0 !important;">
                         <table class="column" width="100%" border="0" cellspacing="0" cellpadding="0" style="box-sizing: border-box;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;min-width: 100%;">
                           <tbody>
                             <tr>
-                              <td class="column_cell px pte tc pbe" style="box-sizing: border-box;vertical-align: top;width: 100%;min-width: 100%;padding-top: 32px;padding-bottom: 32px;font-family: Helvetica, Arial, sans-serif;font-size: 16px;line-height: 23px;color: #616161;mso-line-height-rule: exactly;text-align: center;padding-left: 16px;padding-right: 16px;">
-                                <h1 class="mb_xxs" align="center" style="color: #424242;margin-left: 0;margin-right: 0;margin-top: 20px;margin-bottom: 4px;padding: 0;font-weight: bold;font-size: 32px;line-height: 42px;">Beste {{$user->name}}</h1>
-                                <p class="lead" align="center" style="font-family: Helvetica, Arial, sans-serif;font-size: 19px;line-height: 27px;color: #b7b2c1;mso-line-height-rule: exactly;display: block;margin-top: 0;margin-bottom: 50px;">We hebben uw account aangemaakt!</p>
-                                <table class="ebtn" align="center" border="0" cellspacing="0" cellpadding="0" style="box-sizing: border-box;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;display: table;margin-left: auto;margin-right: auto;">
-                                  <tbody>
-                                    <tr>
-                                      <td class="success_b" style="box-sizing: border-box;vertical-align: top;background-color: #5ebb6b;line-height: 20px;font-family: Helvetica, Arial, sans-serif;mso-line-height-rule: exactly;border-radius: 4px;text-align: center;font-weight: bold;font-size: 17px;padding: 13px 22px;"><a href="{{ $link }}" style="text-decoration: none;line-height: inherit;color: #ffffff;"><span style="text-decoration: none;line-height: inherit;color: #ffffff;">Aan de slag</span></a></td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </td>
+<td class="column_cell px pt_xs pb_0 logo_c tl" style="box-sizing: border-box;vertical-align: top;width: 100%;min-width: 100%;padding-top: 8px;padding-bottom: 0;font-family: Helvetica, Arial, sans-serif;font-size: 16px;line-height: 100%;color: #616161;mso-line-height-rule: exactly;text-align: left;padding-left: 16px;padding-right: 16px;"><a href="https://eatcard.nl" style="text-decoration: none;line-height: inherit;color: #f24853; display: block; margin-bottom:40px; ">
+@if($store->page_logo)
+<img src="{{ \Weboccult\EatcardMailCompanion\Helpers\getS3File($store->email_page_logo) }}" width="65" height="92" alt="Eatcard - Versterk de binding met uw klanten" style="outline: none;border: 0;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;line-height: 100%;max-width: 168px;height: auto !important; display: block; margin:0 auto;">
+@endif
+</a></td>
                             </tr>
                           </tbody>
                         </table>
@@ -761,7 +715,76 @@ table .nw {
       </tr>
     </tbody>
   </table>
-  <!-- content_center -->
+  <!-- jumbotron_accent_icon -->
+  <table class="email_table" width="100%" border="0" cellspacing="0" cellpadding="0" style="box-sizing: border-box;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;min-width: 100%;">
+   <tbody>
+     <tr>
+       <td class="email_body tc" style="box-sizing: border-box;vertical-align: top;line-height: 100%;text-align: center;padding-left: 16px;padding-right: 16px;background-color: #24ABFF;font-size: 0 !important;">
+         <!--[if (mso)|(IE)]><table width="632" border="0" cellspacing="0" cellpadding="0" align="center" style="vertical-align:top;width:632px;Margin:0 auto;"><tbody><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+         <div class="email_container" style="box-sizing: border-box;font-size: 0;display: inline-block;width: 100%;vertical-align: top;max-width: 632px;margin: 0 auto;text-align: center;line-height: inherit;min-width: 0 !important;">
+           <table class="content_section" width="100%" border="0" cellspacing="0" cellpadding="0" style="box-sizing: border-box;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;min-width: 100%;">
+             <tbody>
+               <tr>
+                 <td class="content_cell active_b brt" style="box-sizing: border-box;vertical-align: top;width: 100%;background-color: #f24853;font-size: 0;text-align: center;padding-left: 16px;padding-right: 16px;border-radius: 4px 4px 0 0;line-height: inherit;min-width: 0 !important;">
+                   <!-- col-6 -->
+                   <div class="email_row" style="box-sizing: border-box;font-size: 0;display: block;width: 100%;vertical-align: top;margin: 0 auto;text-align: center;clear: both;line-height: inherit;min-width: 0 !important;max-width: 600px !important;">
+                   <!--[if (mso)|(IE)]><table width="600" border="0" cellspacing="0" cellpadding="0" align="center" style="vertical-align:top;width:600px;Margin:0 auto 0 0;"><tbody><tr><td width="600" style="width:600px;line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+                     <div class="col_6" style="box-sizing: border-box;font-size: 0;display: inline-block;width: 100%;vertical-align: top;max-width: 600px;line-height: inherit;min-width: 0 !important;">
+                       <table class="column" width="100%" border="0" cellspacing="0" cellpadding="0" style="box-sizing: border-box;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;min-width: 100%;">
+                         <tbody>
+                           <tr>
+                             <td class="column_cell px pte tc sc" style="box-sizing: border-box;vertical-align: top;width: 100%;min-width: 100%;padding-top: 32px;padding-bottom: 16px;font-family: Helvetica, Arial, sans-serif;font-size: 16px;line-height: 23px;color: #ffffff;mso-line-height-rule: exactly;text-align: center;padding-left: 16px;padding-right: 16px;">
+                               <table class="ic_h" align="center" width="64" border="0" cellspacing="0" cellpadding="0" style="box-sizing: border-box;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;display: table;margin-left: auto;margin-right: auto;width: 64px;">
+                                 <tbody>
+                                   <tr>
+                                     <td class="default_b" style="box-sizing: border-box;vertical-align: middle;background-color: #633cb4;line-height: 100%;font-family: Helvetica, Arial, sans-serif;color: #ffffff;text-align: center;mso-line-height-rule: exactly;padding: 16px;border-radius: 80px;">
+                                       <p class="imgr mb_0" style="font-family: Helvetica, Arial, sans-serif;font-size: 0;line-height: 100%;color: #ffffff;mso-line-height-rule: exactly;display: block;margin-top: 0;margin-bottom: 0;clear: both;"><img src="{{ getS3File(env('AWS_URL').'assets/flash.png')}}" width="32" height="32" alt="" style="outline: none;border: 0;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;line-height: 100%;max-width: 32px;width: 100% !important;height: auto !important;display: block;margin-left: auto;margin-right: auto;"></p>
+                                     </td>
+                                   </tr>
+                                 </tbody>
+                               </table>
+                               <h1 class="mb_xxs" style="color: #ffffff;margin-left: 0;margin-right: 0;margin-top: 20px;margin-bottom: 4px;padding: 0;font-weight: bold;font-size: 32px;line-height: 42px;">{{$user->name}} We hebben je gemist</h1>
+                               <p class="lead" style="font-family: Helvetica, Arial, sans-serif;font-size: 19px;line-height: 27px;color: #ffffff;mso-line-height-rule: exactly;display: block;margin-top: 0;margin-bottom: 16px;">We vinden het </p>
+                             </td>
+                           </tr>
+                         </tbody>
+                       </table>
+                     </div>
+                   <!--[if (mso)|(IE)]></td></tr></tbody></table><![endif]-->
+                   </div>
+                 </td>
+               </tr>
+             </tbody>
+           </table>
+         </div>
+         <!--[if (mso)|(IE)]></td></tr></tbody></table><![endif]-->
+       </td>
+     </tr>
+   </tbody>
+  </table>
+  <!-- image_full_width -->
+  <table class="email_table" width="100%" border="0" cellspacing="0" cellpadding="0" style="box-sizing: border-box;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;min-width: 100%;">
+    <tbody>
+      <tr>
+        <td class="email_body tc" style="box-sizing: border-box;vertical-align: top;line-height: 100%;text-align: center;padding-left: 16px;padding-right: 16px;background-color: #24ABFF;font-size: 0 !important;">
+          <!--[if (mso)|(IE)]><table width="632" border="0" cellspacing="0" cellpadding="0" align="center" style="vertical-align:top;width:632px;Margin:0 auto;"><tbody><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+          <div class="email_container" style="box-sizing: border-box;font-size: 0;display: inline-block;width: 100%;vertical-align: top;max-width: 632px;margin: 0 auto;text-align: center;line-height: inherit;min-width: 0 !important;">
+            <table class="content_section" width="100%" border="0" cellspacing="0" cellpadding="0" style="box-sizing: border-box;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;min-width: 100%;">
+              <tbody>
+                <tr>
+                  <td class="content_cell pl_0 pr_0" style="box-sizing: border-box;vertical-align: top;width: 100%;background-color: #ffffff;font-size: 0;text-align: center;padding-left: 0;padding-right: 0;line-height: inherit;min-width: 0 !important;">
+                    <p class="mb_0 imgr imgr632" style="font-family: Helvetica, Arial, sans-serif;font-size: 0;line-height: 100%;color: #616161;mso-line-height-rule: exactly;display: block;margin-top: 0;margin-bottom: 0;clear: both;"><img src="{{ getS3File(env('AWS_URL').'assets/thumb_632x316.jpg') }}" width="632" height="" alt="" style="outline: none;border: 0;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;line-height: 100%;max-width: 632px;margin-left: auto;margin-right: auto;width: 100% !important;height: auto !important;"></p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!--[if (mso)|(IE)]></td></tr></tbody></table><![endif]-->
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <!-- content -->
   <table class="email_table" width="100%" border="0" cellspacing="0" cellpadding="0" style="box-sizing: border-box;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;min-width: 100%;">
     <tbody>
       <tr>
@@ -779,9 +802,8 @@ table .nw {
                         <table class="column" width="100%" border="0" cellspacing="0" cellpadding="0" style="box-sizing: border-box;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;min-width: 100%;">
                           <tbody>
                             <tr>
-                              <td class="column_cell px tc" style="box-sizing: border-box;vertical-align: top;width: 100%;min-width: 100%;padding-top: 16px;padding-bottom: 16px;font-family: Helvetica, Arial, sans-serif;font-size: 16px;line-height: 23px;color: #616161;mso-line-height-rule: exactly;text-align: center;padding-left: 16px;padding-right: 16px;">
-                                <p align="center" style="font-family: Helvetica, Arial, sans-serif;font-size: 16px;line-height: 23px;color: #616161;mso-line-height-rule: exactly;display: block;margin-top: 0;margin-bottom: 16px;">Hartelijk dank voor uw registratie bij Eatcard. Uw registratie is voltooid. Vanaf nu kunt u beginnen met punten sparen en beheren.</p>
-
+                              <td class="column_cell px tl" style="box-sizing: border-box;vertical-align: top;width: 100%;min-width: 100%;padding-top: 16px;padding-bottom: 16px;font-family: Helvetica, Arial, sans-serif;font-size: 16px;line-height: 23px;color: #616161;mso-line-height-rule: exactly;text-align: left;padding-left: 16px;padding-right: 16px;">
+                                <p style="font-family: Helvetica, Arial, sans-serif;font-size: 16px;line-height: 23px;color: #616161;mso-line-height-rule: exactly;display: block;margin-top: 0;margin-bottom: 16px;">{!! $msg !!}</p>
                               </td>
                             </tr>
                           </tbody>
@@ -799,35 +821,7 @@ table .nw {
       </tr>
     </tbody>
   </table>
-  <!-- spacer-lg -->
-  <table class="email_table" width="100%" border="0" cellspacing="0" cellpadding="0" style="box-sizing: border-box;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;min-width: 100%;">
-    <tbody>
-      <tr>
-        <td class="email_body tc" style="box-sizing: border-box;vertical-align: top;line-height: 100%;text-align: center;padding-left: 16px;padding-right: 16px;background-color: #24ABFF;font-size: 0 !important;">
-          <!--[if (mso)|(IE)]><table width="632" border="0" cellspacing="0" cellpadding="0" align="center" style="vertical-align:top;width:632px;Margin:0 auto;"><tbody><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
-          <div class="email_container" style="box-sizing: border-box;font-size: 0;display: inline-block;width: 100%;vertical-align: top;max-width: 632px;margin: 0 auto;text-align: center;line-height: inherit;min-width: 0 !important;">
-            <table class="content_section" width="100%" border="0" cellspacing="0" cellpadding="0" style="box-sizing: border-box;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;min-width: 100%;">
-              <tbody>
-                <tr>
-                  <td class="content_cell" style="box-sizing: border-box;vertical-align: top;width: 100%;background-color: #ffffff;font-size: 0;text-align: center;padding-left: 16px;padding-right: 16px;line-height: inherit;min-width: 0 !important;">
-                    <table class="hr_rl" align="center" width="100%" border="0" cellspacing="0" cellpadding="0" style="box-sizing: border-box;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;font-size: 0;line-height: 1px;mso-line-height-rule: exactly;min-height: 1px;overflow: hidden;height: 2px;background-color: transparent !important;">
-                      <tbody>
-                        <tr>
-                          <td class="hr_ep pte" style="box-sizing: border-box;vertical-align: top;font-size: 0;line-height: inherit;mso-line-height-rule: exactly;min-height: 1px;overflow: hidden;height: 2px;padding-top: 32px;background-color: transparent !important;">&nbsp; </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <!--[if (mso)|(IE)]></td></tr></tbody></table><![endif]-->
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <!-- footer_blank_center -->
+  <!-- footer -->
   <table class="email_table" width="100%" border="0" cellspacing="0" cellpadding="0" style="box-sizing: border-box;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;min-width: 100%;">
     <tbody>
       <tr>
@@ -837,32 +831,27 @@ table .nw {
             <table class="content_section" width="100%" border="0" cellspacing="0" cellpadding="0" style="box-sizing: border-box;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;min-width: 100%;">
               <tbody>
                 <tr>
-                  <td class="content_cell brb pt_xs" style="box-sizing: border-box;vertical-align: top;width: 100%;background-color: #ffffff;font-size: 0;text-align: center;padding-left: 16px;padding-right: 16px;border-radius: 0 0 4px 4px;padding-top: 8px;line-height: inherit;min-width: 0 !important;">&nbsp; </td>
-                </tr>
-                <tr>
-                  <td class="blank_cell footer_c pt pb" style="box-sizing: border-box;vertical-align: top;padding-top: 16px;padding-bottom: 16px;line-height: inherit;">
-                    <!-- col-6 -->
+                  <td class="content_cell footer_c bt brb pt pb" style="box-sizing: border-box;vertical-align: top;width: 100%;background-color: #ffffff;font-size: 0;text-align: center;padding-left: 16px;padding-right: 16px;border-radius: 0 0 4px 4px;padding-top: 16px;padding-bottom: 16px;border-top: 1px solid #dad6e2;line-height: inherit;min-width: 0 !important;">
+                    <!-- col-2-4 -->
                     <div class="email_row" style="box-sizing: border-box;font-size: 0;display: block;width: 100%;vertical-align: top;margin: 0 auto;text-align: center;clear: both;line-height: inherit;min-width: 0 !important;max-width: 600px !important;">
-                    <!--[if (mso)|(IE)]><table width="600" border="0" cellspacing="0" cellpadding="0" align="center" style="vertical-align:top;width:600px;Margin:0 auto;"><tbody><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
-                      <div class="col_6" style="box-sizing: border-box;font-size: 0;display: inline-block;width: 100%;vertical-align: top;max-width: 600px;line-height: inherit;min-width: 0 !important;">
+                    <!--[if (mso)|(IE)]><table width="600" border="0" cellspacing="0" cellpadding="0" align="center" style="vertical-align:top;width:600px;Margin:0 auto;"><tbody><tr><td width="400" style="width:400px;line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+                      <div class="col_4" style="box-sizing: border-box;font-size: 0;display: inline-block;width: 100%;vertical-align: top;max-width: 500px;line-height: inherit;min-width: 0 !important;">
                         <table class="column" width="100%" border="0" cellspacing="0" cellpadding="0" style="box-sizing: border-box;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;min-width: 100%;">
                           <tbody>
                             <tr>
-                              <td class="column_cell px pt_xs pb_0 tc" style="box-sizing: border-box;vertical-align: top;width: 100%;min-width: 100%;padding-top: 8px;padding-bottom: 0;font-family: Helvetica, Arial, sans-serif;font-size: 16px;line-height: 23px;color: #b7b2c1;mso-line-height-rule: exactly;text-align: center;padding-left: 16px;padding-right: 16px;">
-
-                                <p class="mb_xxs" style="font-family: Helvetica, Arial, sans-serif;font-size: 16px;line-height: 23px;color: #fff;mso-line-height-rule: exactly;display: block;margin-top: 0;margin-bottom: 4px;">
-                                  ©{!! date("Y") !!} eatcard<br>
-                                    Helftheuvelweg 11, 5222 AV ’s-Hertogenbosch
+                              <td class="column_cell px pt_xs pb_0 tl" style="box-sizing: border-box;vertical-align: top;width: 100%;min-width: 100%;padding-top: 8px;padding-bottom: 0;font-family: Helvetica, Arial, sans-serif;font-size: 16px;line-height: 23px;color: #b7b2c1;mso-line-height-rule: exactly;text-align: left;padding-left: 16px;padding-right: 16px;">
+                                <p class="mb_xxs" style="font-family: Helvetica, Arial, sans-serif;font-size: 16px;line-height: 23px;color: #b7b2c1;mso-line-height-rule: exactly;display: block;margin-top: 0;margin-bottom: 4px; text-align: center;">
+                                  ©{!! date("Y") !!} {{ $store->store_name }}<br>
+                                  <small style="font-size: 14px;">{{ $store->address }}</small>
                                 </p>
-                                <p class="small mb_0" align="center" style="font-family: Helvetica, Arial,
-                                sans-serif;font-size: 14px;line-height: 20px;color: #fff;mso-line-height-rule: exactly;display: block;margin-top: 0;margin-bottom: 0;"><a href="https://eatcard.nl" style="text-decoration: underline;line-height: inherit;color: #fff;"><span style="text-decoration: underline;line-height: inherit;color: #fff;">Download de app</span></a> <span style="line-height: inherit;">&nbsp; • &nbsp;</span> <a href="https://eatcard.nl/vragen-en-antwoorden" style="text-decoration: underline;line-height: inherit;color: #fff;"><span style="text-decoration: underline;line-height: inherit;color: #fff;">Vragen en Antwoorden</span></a> <span style="line-height: inherit;">&nbsp; • &nbsp;</span></p>
+                            
+                              </td>
                             </tr>
                           </tbody>
                         </table>
                       </div>
-                    <!--[if (mso)|(IE)]></td></tr></tbody></table><![endif]-->
-                    </div>
-                  </td>
+                    
+                  </div></td>
                 </tr>
               </tbody>
             </table>

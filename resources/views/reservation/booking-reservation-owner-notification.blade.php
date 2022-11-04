@@ -409,7 +409,7 @@ xmlns:o="urn:schemas-microsoft-com:office:office">
                                                                     <td width="5"></td>
                                                                     @if($store->instagram_url)
                                                                     <td align="center">
-                                                                        <a href="{{ $store->instagram_url }}"><img class="em_img" src="{{ env('COMPANION_AWS_URL').'/assets/instagram.png' }}" style="display:block" width="24" height="24" border="0" alt="IG"/></a>
+                                                                        <a href="{{ $store->instagram_url }}"><img class="em_img" src="{{ \Weboccult\EatcardMailCompanion\Helpers\getS3File(config('eatcardMailCompanion.AWS_URL'). 'assets/instagram.png') }}" style="display:block" width="24" height="24" border="0" alt="IG"/></a>
                                                                     </td>
                                                                     @endif
                                                                 </tr>

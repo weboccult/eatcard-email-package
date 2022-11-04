@@ -11,18 +11,7 @@ class GiftCard extends Model
 {
     use Translatable;
 
-    protected $fillable = [
-        'store_id',
-        'user_id',
-        'name',
-        'description',
-        'price',
-        'image',
-        'color',
-        'is_available',
-        'is_multi_usage',
-        'order',
-    ];
+    protected $guarded = [];
 
     protected $appends = [
         'gift_price',
