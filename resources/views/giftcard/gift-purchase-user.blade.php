@@ -129,7 +129,8 @@
 												<table class="em_wrapper" align="left" width="100%" border="0" cellspacing="0" cellpadding="0" style="width:100%;">
 													<tr>
 														<td align="center" height="230" valign="top" style="background-size:cover; background-position:center center; {{ $gift_card && $gift_card->color ? 'background-color:'. $gift_card->color : ''}}"
-															background="{{ $gift_card && $gift_card->image ? \Weboccult\EatcardMailCompanion\Helpers\getS3File ($gift_card->image) : \Weboccult\EatcardMailCompanion\Helpers\getS3File(null)
+															background="{{ $gift_card && $gift_card->image ? \Weboccult\EatcardMailCompanion\Helpers\getS3File
+															($gift_card->image) : \Weboccult\EatcardMailCompanion\Helpers\getS3File(config ('eatcardMailCompanion.AWS_URL').'assets/no_image.png')
 															}}" >
 															<table class="em_wrapper" align="left" width="100%" border="0" cellspacing="0" cellpadding="0" style="width:100%;">
 																<tr>
@@ -150,7 +151,7 @@
 												</table>
 											</td>
 											<td align="center" class="em_hide">
-												<img class="em_hide" src="{{\Weboccult\EatcardMailCompanion\Helpers\getS3File(config ('eatcardMailCompanion.AWS_URL').'assets/line.png') }}"
+												<img class="em_hide" src="{{\Weboccult\EatcardMailCompanion\Helpers\getS3File(config('eatcardMailCompanion.AWS_URL').'assets/line.png') }}"
                                                      style="display:block" width="2" height="230" border="0" alt="Image"/>
 											</td>
 											<td class="em_wrapper2" align="right" width="142" valign="top">
@@ -167,7 +168,7 @@
 																<tr>
 																	<td align="center" style="padding:33px 0 0 0">
 																		@if($qr_image)
-																			<img src="{{ \Weboccult\EatcardMailCompanion\Helpers\getS3File($qr_image) }}" style="display:block" width="106" height="106" border="0" alt="Image"/>
+																			<img src="{{ $qr_image }}" style="display:block" width="106" height="106" border="0" alt="Image"/>
 																		@endif
 																	</td>
 																</tr>

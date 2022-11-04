@@ -126,6 +126,15 @@ class EatcardMailCompanion
 				'msg' => $this->payload['msg'],
 				'store' => $card->store,
 			]);
+		} elseif ($this->entityType == 'super_admin') {
+			$stores = Store::whereDate('expired_on', $this->payload['month_date'])
+				->with(['store_owner.user' => function ($q) {
+					$q->select('id', 'name');
+				}])->get();
+			$this->content = __mailCompanionViews('recipient_type', [
+				'stores' => $stores,
+				'ext_date' => $this->payload['ext_date']
+			]);
 		}
 		return $this;
 	}
@@ -248,10 +257,14 @@ class EatcardMailCompanion
 		$messages = Message::where('thread_id', $this->entity_data->thread_id)
 			->where('user_id', '!=', null)
 			->orderBy('id', 'desc')->first();
+		if(isset($this->payload['page_logo'])) {
+			$this->store->page_logo = $this->payload['page_logo'];
+		}
 		$this->content = __mailCompanionViews('reservation.'.$this->payload['status'],[
 			'store' => $this->store,
 			'storeRes' => $this->entity_data,
 			'chat_link_url' => encrypt($this->entity_data->store_id . '-' . $this->entity_data->id . '-' . $this->entity_data->user_id).(!is_null($this->entity_data->user_id) ? '/' .$this->entity_data->user_id : ''),
+			'review_link_url' => $this->payload['review_link_url'] ?? '',
 			'data' => $this->payload['other_data'] ?? [],
 			'messages' => $messages,
 		]);

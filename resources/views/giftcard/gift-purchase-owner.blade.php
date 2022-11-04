@@ -127,7 +127,7 @@
 												<table class="em_wrapper" align="left" width="100%" border="0" cellspacing="0" cellpadding="0" style="width:100%;">
 													<tr>
 														<td align="center" height="230" valign="top" style="background-size:100% 100%; {{ $gift_card && $gift_card->color ? 'background-color:'. $gift_card->color : ''}}"
-															background="{{ $gift_card && $gift_card->image ? \Weboccult\EatcardMailCompanion\Helpers\getS3File ($gift_card->image) : \Weboccult\EatcardMailCompanion\Helpers\getS3File(null) }}" >
+															background="{{ $gift_card && $gift_card->image ? \Weboccult\EatcardMailCompanion\Helpers\getS3File ($gift_card->image) : \Weboccult\EatcardMailCompanion\Helpers\getS3File(config ('eatcardMailCompanion.AWS_URL').'assets/no_image.png') }}" >
 															<table class="em_wrapper" align="left" width="100%" border="0" cellspacing="0" cellpadding="0" style="width:100%;">
 																<tr>
 																	<td align="left" style="padding:14px 10px 10px 14px;" >
