@@ -204,7 +204,7 @@
 								<td align="center" style="padding:0 10px 0 10px">
 									<table class="em_wrapper" align="center" width="480" border="0" cellspacing="0" cellpadding="0" style="width:480px;">
 
-										@if($order->is_friend_send == 1)
+										@if($order->is_friend_send)
 										<tr>
 											<td class="em_font14" align="center" style="font-family:Georgia, Arial, sans-serif; font-size:18px; line-height:22px; font-weight:normal; font-style:normal; color:#000000; padding:26px 0 0 0; ">
                                                 Beste {{ $order->full_name }}, We hebben uw order ontvangen. Een E-Giftcard is verstuurd naar {{$order->friend_full_name}}.

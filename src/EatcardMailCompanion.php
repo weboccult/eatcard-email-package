@@ -296,6 +296,7 @@ class EatcardMailCompanion
 	 */
 	public function giftPurchaseOrderMail($mailType)
 	{
+		Log::info('Gift card purchase data : '. json_encode($this->entity_data));
 		$this->content = __mailCompanionViews($mailType,[
 			'store' => $this->store,
 			'order' => $this->entity_data,

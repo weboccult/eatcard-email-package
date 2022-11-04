@@ -175,7 +175,7 @@
                                                                         <table align="center" width="106" border="0" cellspacing="0" cellpadding="0" style="font-family: Avenir, Helvetica, sans-serif; box-sizing: border-box; border-collapse: collapse; mso-table-lspace: 0px; mso-table-rspace: 0px; width: 106px; background-color: #FFFFFF; border-radius: 8px;">
                                                                             <tr>
                                                                                 <td align="center" style="box-sizing: border-box; border-collapse: collapse; mso-line-height-rule: exactly; font-family: 'Work Sans', Arial, sans-serif; font-size: 14px; line-height: 18px; font-weight: normal; font-style: normal; color: #000000; padding: 5px 5px 5px 5px;">
-                                                                                    <a href="" style="font-family: Avenir, Helvetica, sans-serif; box-sizing: border-box; border-collapse: collapse; mso-line-height-rule: exactly; text-decoration: none; color: #000000;">BFC9719351</a>
+                                                                                    <a href="" style="font-family: Avenir, Helvetica, sans-serif; box-sizing: border-box; border-collapse: collapse; mso-line-height-rule: exactly; text-decoration: none; color: #000000;">{{ $order->qr_code }}</a>
                                                                                 </td>
                                                                             </tr>
                                                                         </table>
@@ -201,7 +201,7 @@
 								<td align="center" style="padding:0 10px 0 10px">
 									<table class="em_wrapper" align="center" width="480" border="0" cellspacing="0" cellpadding="0" style="width:480px;">
 
-										@if($order->is_friend_send == 1)
+										@if($order->is_friend_send)
 										<tr>
 											<td class="em_font14" align="center" style="font-family:Georgia, Arial, sans-serif; font-size:18px; line-height:22px; font-weight:normal; font-style:normal; color:#000000; padding:26px 0 0 0; ">
                                                 Beste {{ $order->friend_full_name }}, U heeft een E-Gift Card ontvangen van {{ $order->full_name }}.
