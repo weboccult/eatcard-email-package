@@ -133,8 +133,8 @@
                                     <table class="em_wrapper" align="center" width="400" border="0" cellspacing="0" cellpadding="0" style="width:400px;">
                                         <tr>
                                             <td align="center" style="padding:32px 0 0 0">
-                                                @if($data['logo'])
-                                                    <img src="{{$data['logo']}}" style="display:block"
+                                                @if($store->page_logo)
+                                                    <img src="{{\Weboccult\EatcardMailCompanion\Helpers\getS3File($store->page_logo)}}" style="display:block"
                                                          border="0" alt="Logo"/>
                                                 @endif
                                             </td>
