@@ -175,7 +175,7 @@
                                                                         <table align="center" width="106" border="0" cellspacing="0" cellpadding="0" style="font-family: Avenir, Helvetica, sans-serif; box-sizing: border-box; border-collapse: collapse; mso-table-lspace: 0px; mso-table-rspace: 0px; width: 106px; background-color: #FFFFFF; border-radius: 8px;">
                                                                             <tr>
                                                                                 <td align="center" style="box-sizing: border-box; border-collapse: collapse; mso-line-height-rule: exactly; font-family: 'Work Sans', Arial, sans-serif; font-size: 14px; line-height: 18px; font-weight: normal; font-style: normal; color: #000000; padding: 5px 5px 5px 5px;">
-                                                                                    <a href="" style="font-family: Avenir, Helvetica, sans-serif; box-sizing: border-box; border-collapse: collapse; mso-line-height-rule: exactly; text-decoration: none; color: #000000;">BFC9719351</a>
+                                                                                    <a href="" style="font-family: Avenir, Helvetica, sans-serif; box-sizing: border-box; border-collapse: collapse; mso-line-height-rule: exactly; text-decoration: none; color: #000000;">{{ $order->qr_code }}</a>
                                                                                 </td>
                                                                             </tr>
                                                                         </table>
