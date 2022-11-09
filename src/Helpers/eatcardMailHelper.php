@@ -102,3 +102,38 @@ if (! function_exists('appDutchDate')) {
 		return $dutchDayNames[Carbon::parse($date)->format('l')].' '.Carbon::parse($date)->format('d-m-y');
 	}
 }
+
+if(!function_exists('getDutchDate')) {
+	function getDutchDate($date, $day2let = false)
+	{
+		$dutchDayNames = [
+			'Sunday' => 'zondag',
+			'Monday' => 'maandag',
+			'Tuesday' => 'dinsdag',
+			'Wednesday' => 'woensdag',
+			'Thursday' => 'donderdag',
+			'Friday' => 'vrijdag',
+			'Saturday' => 'zaterdag'
+		];
+
+
+		$monthNames = [
+			"January" => "januari",
+			"February" => "februari",
+			"March" => "maart",
+			"April" => "april",
+			"May" => "mei",
+			"June" => "juni",
+			"July" => "juli",
+			"August" => "augustus",
+			"September" => "september",
+			"October" => "oktober",
+			"November" => "november",
+			"December" => "december",
+		];
+		$day = $day2let ? appDutchDate(Carbon::parse($date)->format('l')) : $dutchDayNames[Carbon::parse($date)->format('l')];
+		return $day. ' ' . Carbon::parse($date)->format('d') . ' ' .
+			$monthNames[Carbon::parse($date)->format('F')] . ' ' .
+			Carbon::parse($date)->format('Y');
+	}
+}

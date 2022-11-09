@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use function Weboccult\EatcardCompanion\Helpers\getDutchDate;
+use function Weboccult\EatcardMailCompanion\Helpers\getDutchDate;
 use function Weboccult\EatcardMailCompanion\Helpers\getDutchDateTable;
 use Weboccult\EatcardMailCompanion\Traits\PaymentTable;
 
