@@ -58,6 +58,7 @@ class SendMailJob implements ShouldQueue
 				$mailHistory->recipients = $mailDetails->recipients;
 				$mailHistory->message = $mailDetails->message;
 				$mailHistory->save();
+				Log::info('After create mail entry in history table');
 				Mail::html($mailDetails->message, function ($message) use ($mailDetails) {
 					$message->to($mailDetails->recipients)->subject($mailDetails->subject);
 					$message->from(env('MAIL_FROM_ADDRESS'), $mailDetails->from_name);
@@ -84,10 +85,5 @@ class SendMailJob implements ShouldQueue
 		} catch (\Exception $e) {
 			Log::error('Error on sendmail jobs catch : UUID : '.json_encode($this->job->payload()['uuid']).' | Message : '.$e->getMessage().' | Line : '.$e->getLine());
 		}
-	}
-
-	public function failed(\Exception $exception)
-	{
-		Log::error('Jobs data store in failed jobs table');
 	}
 }
