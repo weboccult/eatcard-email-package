@@ -48,7 +48,7 @@ class SendMailJob implements ShouldQueue
 				Log::info('Recipients mail ID : ' . $mailDetails->recipients);
 				updateEmailCount('success');
 				Log::info('create mail entry in history table');
-				if($mailDetails->entity_type != 'reservation') {
+//				if($mailDetails->entity_type != 'reservation') {
 					Log::info('Entity type was reservation');
 					$mailHistory = new MailHistory();
 					$mailHistory->entity_type = $mailDetails->entity_type;
@@ -61,22 +61,22 @@ class SendMailJob implements ShouldQueue
 					$mailHistory->recipients = $mailDetails->recipients;
 					$mailHistory->message = $mailDetails->message;
 					$mailHistory->save();
-				} else {
-					Log::info('Entity type was not reservation');
-					MailJob::query()->create([
-						'entity_type' => $mailDetails->entity_type,
-						'entity_id' => $mailDetails->entity_id,
-						'subject' => $mailDetails->subject,
-						'bcc' => $mailDetails->bcc,
-						'cc' => $mailDetails->cc,
-						'from_name' => $mailDetails->from_name,
-						'mail_type' => $mailDetails->mail_type,
-						'recipients' => $mailDetails->recipients,
-						'message' => $mailDetails->message,
-						'is_sent' => 1,
-						'in_queue' => 0
-					]);
-				}
+//				} else {
+//					Log::info('Entity type was not reservation');
+//					MailJob::query()->create([
+//						'entity_type' => $mailDetails->entity_type,
+//						'entity_id' => $mailDetails->entity_id,
+//						'subject' => $mailDetails->subject,
+//						'bcc' => $mailDetails->bcc,
+//						'cc' => $mailDetails->cc,
+//						'from_name' => $mailDetails->from_name,
+//						'mail_type' => $mailDetails->mail_type,
+//						'recipients' => $mailDetails->recipients,
+//						'message' => $mailDetails->message,
+//						'is_sent' => 1,
+//						'in_queue' => 0
+//					]);
+//				}
 				Log::info('After create mail entry in history table');
 				Mail::html($mailDetails->message, function ($message) use ($mailDetails) {
 					$message->to($mailDetails->recipients)->subject($mailDetails->subject);
