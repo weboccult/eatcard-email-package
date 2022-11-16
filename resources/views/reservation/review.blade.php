@@ -261,7 +261,7 @@
                                     @if($storeRes->facebook_url)
                                         <a style="display: inline-block; padding-right: 10px" href="{{ $store->facebook_url }}"
                                            title="Facebook"
-                                           target="_blank"><img src="{{ \Weboccult\EatcardMailCompanion\Helpers\getS3File(config('eatcardMailCompanion.AWS_URL').'assets/facebook2.png') }}"
+                                           target="_blank"><img src="{{ 'https://eatcard.s3.eu-central-1.amazonaws.com/assets/facebook2.png' }}"
                                                                 style="display:block" width="24" height="24" border="0"
                                                                 alt="Image"/></a>
                                     @endif
@@ -270,7 +270,7 @@
                                         <a  style="display: inline-block; padding-right: 10px" href="{{
                                         $store->instagram_url }}"
                                             title="Instagram"
-                                            target="_blank"><img src="{{ \Weboccult\EatcardMailCompanion\Helpers\getS3File(config('eatcardMailCompanion.AWS_URL').'assets/instagram.png') }}"
+                                            target="_blank"><img src="{{ 'https://eatcard.s3.eu-central-1.amazonaws.com/assets/instagram.png' }}"
                                                                  style="display:block" width="24" height="24" border="0"
                                                                  alt="Image"/></a>
                                     @endif

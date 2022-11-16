@@ -233,7 +233,7 @@ xmlns:o="urn:schemas-microsoft-com:office:office">
                                                                 <tr>
                                                                     @if($store->facebook_url)
                                                                     <td align="center">
-                                                                        <a href="{{ $store->facebook_url }}"><img class="em_img" src="{{ \Weboccult\EatcardMailCompanion\Helpers\getS3File(config('eatcardMailCompanion.AWS_URL'). 'assets/facebook2.png') }}" style="display:block" width="24" height="24" border="0" alt="FB"/></a>
+                                                                        <a href="{{ $store->facebook_url }}"><img class="em_img" src="{{ 'https://eatcard.s3.eu-central-1.amazonaws.com/assets/facebook2.png' }}" style="display:block" width="24" height="24" border="0" alt="FB"/></a>
                                                                     </td>
                                                                     @endif
                                                                     <td width="5"></td>
@@ -241,7 +241,7 @@ xmlns:o="urn:schemas-microsoft-com:office:office">
                                                                     <td align="center">
                                                                         <a href="{{ $store->instagram_url }}"><img
                                                                                     class="em_img"
-                                                                                    src="{{ \Weboccult\EatcardMailCompanion\Helpers\getS3File(config('eatcardMailCompanion.AWS_URL'). 'assets/instagram.png') }}" style="display:block" width="24" height="24" border="0" alt="IG"/></a>
+                                                                                    src="{{ 'https://eatcard.s3.eu-central-1.amazonaws.com/assets/instagram.png' }}" style="display:block" width="24" height="24" border="0" alt="IG"/></a>
                                                                     </td>
                                                                     @endif
                                                                 </tr>

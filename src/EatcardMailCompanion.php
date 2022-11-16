@@ -263,7 +263,7 @@ class EatcardMailCompanion
 		$this->content = __mailCompanionViews('reservation.'.$this->payload['status'],[
 			'store' => $this->store,
 			'storeRes' => $this->entity_data,
-			'chat_link_url' => encrypt($this->entity_data->store_id . '-' . $this->entity_data->id . '-' . $this->entity_data->user_id).(!is_null($this->entity_data->user_id) ? '/' .$this->entity_data->user_id : ''),
+			'chat_link_url' => $this->payload['chat_link_url'] ?? '',
 			'review_link_url' => $this->payload['review_link_url'] ?? '',
 			'data' => $this->payload['other_data'] ?? [],
 			'messages' => $messages,

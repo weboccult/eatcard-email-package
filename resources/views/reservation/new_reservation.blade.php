@@ -104,7 +104,7 @@
                                                             <table class="em_wrapper" align="right" width="168" border="0" cellspacing="0" cellpadding="0"  style="width:168px; background-color:#1B68AA; border-radius:4px; max-width:168px">
                                                                 <tr>
                                                                     <td class="em_font16" align="center" style="font-family:Ubuntu, Helvetica, Arial, sans-serif; font-size:14px; line-height:16px; font-weight:bold; font-style:normal; color:#FFFFFF; padding:8px 5px 8px 5px; ">
-                                                                        <a href="{{config('eatcardMailCompanion.CHAT_URL').$chat_link_url}}" style="display:block; text-decoration:none; color:#FFFFFF">Vragen en opmerking</a>
+                                                                        <a href="{{$chat_link_url}}" style="display:block; text-decoration:none; color:#FFFFFF">Vragen en opmerking</a>
                                                                     </td>
                                                                 </tr>
                                                             </table>
@@ -180,7 +180,7 @@
                                                 <table  align="center" width="115" border="0" cellspacing="0" cellpadding="0"  style="width:115px; background-color:#1B68AA; border-radius:4px; max-width:168px">
                                                     <tr>
                                                         <td align="center" style="font-family:Ubuntu, Helvetica, Arial, sans-serif; font-size:14px; line-height:16px; font-weight:bold; font-style:normal; color:#FFFFFF; padding:8px 5px 8px 5px; ">
-                                                            <a href="{{config('eatcardMailCompanion.CHAT_URL').$chat_link_url}}" style="display:block; text-decoration:none; color:#FFFFFF">Nu reageren</a>
+                                                            <a href="{{$chat_link_url}}" style="display:block; text-decoration:none; color:#FFFFFF">Nu reageren</a>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -235,13 +235,13 @@
                                                                 <tr>
                                                                     @if($store->facebook_url)
                                                                         <td align="center">
-                                                                            <a href="{{ $store->facebook_url }}"><img class="em_img" src="{{ \Weboccult\EatcardMailCompanion\Helpers\getS3File(config('eatcardMailCompanion.AWS_URL'). 'assets/facebook2.png') }}" style="display:block" width="24" height="24" border="0" alt="FB"/></a>
+                                                                            <a href="{{ $store->facebook_url }}"><img class="em_img" src="{{ 'https://eatcard.s3.eu-central-1.amazonaws.com/assets/facebook2.png' }}" style="display:block" width="24" height="24" border="0" alt="FB"/></a>
                                                                         </td>
                                                                     @endif
                                                                     <td width="5"></td>
                                                                     @if($store->instagram_url)
                                                                         <td align="center">
-                                                                            <a href="{{ $store->instagram_url }}"><img class="em_img" src="{{ \Weboccult\EatcardMailCompanion\Helpers\getS3File(config('eatcardMailCompanion.AWS_URL'). 'assets/instagram.png') }}" style="display:block" width="24" height="24" border="0" alt="IG"/></a>
+                                                                            <a href="{{ $store->instagram_url }}"><img class="em_img" src="{{ 'https://eatcard.s3.eu-central-1.amazonaws.com/assets/instagram.png' }}" style="display:block" width="24" height="24" border="0" alt="IG"/></a>
                                                                         </td>
                                                                     @endif
                                                                 </tr>
@@ -272,7 +272,7 @@
                                         </tr>
                                         <tr>
                                             <td align="center" style="padding:10px 0 30px 0">
-                                                <img src="{{ \Weboccult\EatcardMailCompanion\Helpers\getS3File(config('eatcardMailCompanion.AWS_URL'). 'assets/eat_card.png') }}" style="display:block" width="56" height="25" border="0" alt="et card"/>
+                                                <img src="{{ 'https://eatcard.s3.eu-central-1.amazonaws.com/assets/eat_card.png' }}" style="display:block" width="56" height="25" border="0" alt="et card"/>
                                             </td>
                                         </tr>
                                     </table>
