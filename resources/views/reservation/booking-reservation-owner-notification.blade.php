@@ -153,7 +153,8 @@ xmlns:o="urn:schemas-microsoft-com:office:office">
                                         <tr>
                                             <td align="center" style="padding:0 0 0 0">
                                                 @if($storeRes->meal->meal_image)
-                                                <img class="em_img" src="{{asset('imagecache/BookingMailMealImage'.\Weboccult\EatcardMailCompanion\Helpers\getCachedImagePath($storeRes->meal->meal_image))}}" style="display:block" width="520" height="174" border="0" alt="Image"/>
+                                                <img class="em_img" src="{{ $storeRes->meal->meal_image }}" style="display:block" width="520"
+                                                     height="174" border="0" alt="Image"/>
                                                 @endif
                                             </td>
                                         </tr>
