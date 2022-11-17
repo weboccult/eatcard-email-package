@@ -508,7 +508,7 @@
                                                                     @if($store->facebook_url)
                                                                         <td align="center">
                                                                             <a href="{{ $store->facebook_url }}"><img
-                                                                                        class="em_img" src="{{ 'https://eatcard.s3.eu-central-1.amazonaws.com/assets/facebook2.png' }}" style="display:block" width="34" height="34" border="0" alt="FB"/></a>
+                                                                                        class="em_img" src="https://eatcard.s3.eu-central-1.amazonaws.com/assets/facebook2.png" style="display:block" width="34" height="34" border="0" alt="FB"/></a>
                                                                         </td>
                                                                     @endif
                                                                     <td width="10"></td>
