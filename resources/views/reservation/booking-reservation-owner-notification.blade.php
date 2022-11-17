@@ -83,7 +83,7 @@ xmlns:o="urn:schemas-microsoft-com:office:office">
                 <tr>
                     <td align="center" style="padding:22px 0 0 0">
                         <table class="em_wrapper" align="center" width="700" border="0" cellspacing="0" cellpadding="0"
-                               style="width:700px; background-color:#F5F5F5; border-radius:12px ">
+                               style="width:600px; background-color:#F5F5F5; border-radius:12px ">
                             <tr>
                                 <td align="center"
                                     style="font-family:'Roboto Slab', Arial, Tahoma; font-size:14px; line-height:19px; font-weight:normal; font-style:normal; color:#575757; padding:25px 10px 25px 10px">
