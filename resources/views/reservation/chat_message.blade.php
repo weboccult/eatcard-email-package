@@ -245,7 +245,7 @@
                                                                     @if($store->instagram_url)
                                                                         <td align="center">
                                                                             <a href="{{ $store->instagram_url }}"><img
-                                                                                        class="em_img" src="{{ 'https://eatcard.s3 .eu-central-1.amazonaws.com/assets/instagram.png' }}" style="display:block" width="24" height="24" border="0" alt="IG"/></a>
+                                                                                        class="em_img" src="{{ 'https://eatcard.s3.eu-central-1.amazonaws.com/assets/instagram.png' }}" style="display:block" width="24" height="24" border="0" alt="IG"/></a>
                                                                         </td>
                                                                     @endif
                                                                 </tr>
