@@ -94,6 +94,7 @@ xmlns:o="urn:schemas-microsoft-com:office:office">
                     </td>
                 </tr>
                 <tr>
+                <tr>
 					<td align="center">
 						<table class="em_wrapper" align="center" width="600" border="0" cellspacing="0" cellpadding="0" style="width:600px; background-color:#FFFFFF">
 							<tr>
@@ -335,7 +336,7 @@ xmlns:o="urn:schemas-microsoft-com:office:office">
                                     <table class="em_wrapper" align="center" width="478" border="0" cellspacing="0" cellpadding="0" style="width:478px; background-color:#F7F7F7; border-radius:12px">
                                         <tr>
                                             <td align="center" style="padding:20px 0 0 0">
-                                                <a href=""><img src="{{ env('COMPANION_AWS_URL').'/assets/btn2.png' }}" style="display:block;" width="98" height="24" border="0" alt="Opmerking"/></a>
+                                                <a href=""><img src="https://eatcard.s3.eu-central-1.amazonaws.com/assets/btn2.png" style="display:block;" width="98" height="24" border="0" alt="Opmerking"/></a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -357,7 +358,7 @@ xmlns:o="urn:schemas-microsoft-com:office:office">
                                                     <table class="em_wrapper" align="center" width="100%" border="0" cellspacing="0" cellpadding="0" style="width:100%; border-radius:12px;">
                                                         <tr>
                                                             <td align="left" style="font-family:Arial, Tahoma; font-size:12px; line-height:18px; font-weight:bold; font-style:normal; color:#000000; padding:9px 10px 0 10px">
-                                                                @companionTrans('reservation.multiple_household')
+                                                                Meerdere huishoudens
                                                             </td>
                                                         </tr>
                                                         {{--<tr>--}}
@@ -404,13 +405,13 @@ xmlns:o="urn:schemas-microsoft-com:office:office">
                                                                 <tr>
                                                                     @if($store->facebook_url)
                                                                     <td align="center">
-                                                                        <a href="{{ $store->facebook_url }}"><img class="em_img" src="{{ 'https://eatcard.s3.eu-central-1.amazonaws.com/assets/facebook2.png' }}" style="display:block" width="24" height="24" border="0" alt="FB"/></a>
+                                                                        <a href="{{ $store->facebook_url }}"><img class="em_img" src="https://eatcard.s3.eu-central-1.amazonaws.com/assets/facebook2.png" style="display:block" width="24" height="24" border="0" alt="FB"/></a>
                                                                     </td>
                                                                     @endif
                                                                     <td width="5"></td>
                                                                     @if($store->instagram_url)
                                                                     <td align="center">
-                                                                        <a href="{{ $store->instagram_url }}"><img class="em_img" src="{{ 'https://eatcard.s3.eu-central-1.amazonaws.com/assets/instagram.png' }}" style="display:block" width="24" height="24" border="0" alt="IG"/></a>
+                                                                        <a href="{{ $store->instagram_url }}"><img class="em_img" src="https://eatcard.s3.eu-central-1.amazonaws.com/assets/instagram.png" style="display:block" width="24" height="24" border="0" alt="IG"/></a>
                                                                     </td>
                                                                     @endif
                                                                 </tr>
@@ -441,7 +442,7 @@ xmlns:o="urn:schemas-microsoft-com:office:office">
                                         </tr>
                                         <tr>
                                             <td align="center" style="padding:10px 0 30px 0">
-                                                <img src="{{ 'https://eatcard.s3.eu-central-1.amazonaws.com/assets/eat_card.png' }}" style="display:block" width="56" height="25" border="0" alt="et card"/>
+                                                <img src="https://eatcard.s3.eu-central-1.amazonaws.com/assets/eat_card.png" style="display:block" width="56" height="25" border="0" alt="et card"/>
                                             </td>
                                         </tr>
                                     </table>
