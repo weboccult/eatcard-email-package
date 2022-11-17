@@ -350,7 +350,7 @@
                                                     <table class="em_wrapper" align="center" width="100%" border="0" cellspacing="0" cellpadding="0" style="width:100%; border-radius:12px;">
                                                         <tr>
                                                             <td align="left" style="font-family:Arial, Tahoma; font-size:12px; line-height:18px; font-weight:bold; font-style:normal; color:#000000; padding:9px 10px 0 10px">
-                                                                {!! __('messages.multiple_household') !!}
+                                                                Meerdere huishoudens
                                                             </td>
                                                         </tr>
                                                         {{--<tr>--}}
