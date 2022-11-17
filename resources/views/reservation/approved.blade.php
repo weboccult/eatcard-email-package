@@ -183,10 +183,21 @@
                                                                border="0" cellspacing="0" cellpadding="0"
                                                                style="width:100%;">
                                                             <tr>
-                                                                <td align="center" height="230" valign="top"
-                                                                    style="border-radius: 10px; background-size: cover;background-repeat: no-repeat;background-position: center;"
-                                                                    background="{{ $storeRes->meal->meal_image ?? 'https://eatcard.s3.eu-central-1.amazonaws.com/assets/no_image.png' }}">
-                                                                </td>
+                                                                @if($storeRes->meal->meal_image)
+                                                                    <td align="center" height="230"
+                                                                        check-set="available-meal-image"
+                                                                        valign="top"
+                                                                        style="border-radius: 10px; background-size: cover;background-repeat: no-repeat;background-position: center;"
+                                                                        background="{{ $storeRes->meal->meal_image }}">
+                                                                    </td>
+                                                                @else
+                                                                    <td align="center" height="230" valign="top"
+                                                                        check-set="not-available-meal-image"
+                                                                        style="border-radius: 10px; background-size: cover;background-repeat: no-repeat;background-position: center;"
+                                                                        background="https://eatcard.s3.eu-central-1.amazonaws.com/assets/no_image.png">
+                                                                    </td>
+                                                                @endif
+
                                                             </tr>
                                                         </table>
                                                     </td>
@@ -438,7 +449,7 @@
                                                     <table class="em_wrapper" align="center" width="100%" border="0" cellspacing="0" cellpadding="0" style="width:100%; border-radius:12px;">
                                                         <tr>
                                                             <td align="left" style="font-family:Arial, Tahoma; font-size:12px; line-height:18px; font-weight:bold; font-style:normal; color:#000000; padding:9px 10px 0 10px">
-                                                                {!! __('messages.multiple_household') !!}
+                                                                Meerdere huishoudens
                                                             </td>
                                                         </tr>
                                                         {{--<tr>--}}
