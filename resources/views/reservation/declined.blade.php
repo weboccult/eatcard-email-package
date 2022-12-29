@@ -285,7 +285,7 @@ xmlns:o="urn:schemas-microsoft-com:office:office">
                                         </tr>
                                         <tr>
                                             <td align="center" style="padding:10px 0 30px 0">
-                                                <img src="{{ \Weboccult\EatcardMailCompanion\Helpers\getS3File(config ('eatcardMailCompanion.AWS_URL'). 'assets/eat_card.png') }}" style="display:block" width="56" height="25" border="0" alt="et card"/>
+                                                <img src="{{ 'https://eatcard.s3.eu-central-1.amazonaws.com/assets/eat_card.png' }}" style="display:block" width="56" height="25" border="0" alt="et card"/>
                                             </td>
                                         </tr>
                                     </table>
